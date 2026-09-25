@@ -1,0 +1,2148 @@
+Package: alsa-utils
+Priority: optional
+Section: sound
+Installed-Size: 3474
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: arm64
+Version: 1.2.14-1+rpt1
+Provides: audio-mixer
+Depends: kmod (>= 17-1~), libasound2t64 (>= 1.2.14), libatopology2t64 (>= 1.2.2), libc6 (>= 2.38), libfftw3-single3 (>= 3.3.10), libncursesw6 (>= 6), libsamplerate0 (>= 0.1.7), libtinfo6 (>= 6)
+Suggests: dialog
+Filename: pool/main/a/alsa-utils/alsa-utils_1.2.14-1+rpt1_arm64.deb
+Size: 1417370
+MD5sum: b37929acaae77ea7107471e3878b5bd0
+SHA1: d6283ba646ea2052409330dd903baa758b7a88d6
+SHA256: 0751d5b8bb6812167c67b6b77e51cb85c97febad540bc75667a4a6a5899e800c
+SHA512: 1183bd6d2c002eb06251cd63b801d77577bb1360e5c9b64d6737900ca26f5d53a3a5c7b79a396f371d138af2d4b3957066495b8c396fff3be4a078b8e93b7f2c
+Description: Utilities for configuring and using ALSA
+ Included tools:
+  - alsactl: advanced controls for ALSA sound drivers
+  - alsaloop: create loopbacks between PCM capture and playback devices
+  - alsamixer: curses mixer
+  - alsaucm: alsa use case manager
+  - amixer: command line mixer
+  - amidi: read from and write to ALSA RawMIDI ports
+  - aplay, arecord: command line playback and recording
+  - aplaymidi, arecordmidi: command line MIDI playback and recording
+  - aconnect, aseqnet, aseqdump: command line MIDI sequencer control
+  - iecset: set or dump IEC958 status bits
+  - speaker-test: speaker test tone generator
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Homepage: https://www.alsa-project.org/
+Multi-Arch: foreign
+
+Package: bluez-firmware
+Priority: optional
+Section: non-free-firmware/kernel
+Installed-Size: 476
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Version: 1.2-13+rpt2
+Filename: pool/main/b/bluez-firmware/bluez-firmware_1.2-13+rpt2_all.deb
+Size: 294826
+MD5sum: 486643f098e98885cec72b7fbb0eca65
+SHA1: fbbe2b32295cbf6405e4474c6a42184e25683761
+SHA256: bfa0cb7a3806fb30a50b9f5756efee4530075aab192ba245758881efb2f24421
+SHA512: 49bd06074f654479748962bdbd0878c585df3d21eaf67a9290cac1b9793ed7c368a4a7c557cae9e349c17afbb46fb41aedc37cb250d1ba266cec7472f27d5092
+Description: Firmware for Bluetooth devices
+ This firmware is required for operation of Bluetooth dongles based on
+ the Broadcom BCM203x and Raspberry Pi chipset.
+
+Package: firmware-brcm80211
+Priority: optional
+Section: non-free-firmware/kernel
+Installed-Size: 20496
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: all
+Source: firmware-nonfree
+Version: 1:20260519-1~bpo13+1+rpt1
+Filename: pool/main/f/firmware-nonfree/firmware-brcm80211_20260519-1~bpo13+1+rpt1_all.deb
+Size: 5942028
+MD5sum: 06cf444956345a57527d671da05b1fd3
+SHA1: eac45ee92191f064f8fb83004aa272280bc6723a
+SHA256: c25e13e84be8dbf58b6b3381b4a10ad7e9dbeae101579376f457e0f17e60d902
+SHA512: 1b10228d2518ca5628e428796ed1aac924f20fc3faddf38b177c047bff3d79ccd6f370bbccd6e80347b798584e752f5b03554ab3d56b16591fcb4ee4247acc1e
+Description: Binary firmware for Broadcom/Cypress 802.11 wireless cards
+ This package contains the binary firmware for wireless network cards
+ supported by the brcmsmac or brcmfmac driver.
+Homepage: https://gitlab.com/kernel-firmware/linux-firmware
+Multi-Arch: foreign
+
+Package: flashrom
+Priority: optional
+Section: electronics
+Installed-Size: 889
+Maintainer: Debian EFI <debian-efi@lists.debian.org>
+Architecture: arm64
+Version: 1.4.0-3+rpt1
+Depends: libc6 (>= 2.34), libftdi1-2 (>= 1.2), libjaylink0 (>= 0.4.0), libpci3 (>= 1:3.13.0), libusb-1.0-0 (>= 2:1.0.22)
+Filename: pool/main/f/flashrom/flashrom_1.4.0-3+rpt1_arm64.deb
+Size: 223082
+MD5sum: ffec3bc881cc0ee444f2057e27cea844
+SHA1: 3672f1516cdf29e356c63f976a22af41d239335f
+SHA256: 63cb7641742835e9fd7a4ebdfee86b65d330b9638137ea5a6660eb0c2738707f
+SHA512: ee8df1b5eaa496be6a1b2efffe0f9ed17f90350f878731e83d1650f5797090134563e8098de527870d6d91ab2d86a1616c4255e192ad5897769a3bf45a457401
+Description: Identify, read, write, erase, and verify BIOS/ROM/flash chips
+ flashrom is a tool for identifying, reading, writing, verifying and erasing
+ flash chips. It's often used to flash BIOS/EFI/coreboot/firmware/optionROM
+ images in-system using a supported mainboard, but it also supports flashing of
+ network cards (NICs), SATA controller cards, and other external devices which
+ can program flash chips.
+ .
+ It supports a wide range of DIP32, PLCC32, DIP8, SO8/SOIC8, TSOP32/40/48,
+ and BGA chips, which use various protocols such as LPC, FWH, parallel
+ flash, or SPI.
+ .
+ The tool can be used to flash BIOS/firmware images for example -- be it
+ proprietary BIOS images or coreboot (previously known as LinuxBIOS) images.
+ .
+ It can also be used to read the current existing BIOS/firmware from a
+ flash chip.
+ .
+ Currently supported programmers include:
+ .
+   * internal (for in-system flashing in the mainboard)
+   * dummy (virtual programmer for testing flashrom)
+   * nic3com (for flash ROMs on 3COM network cards)
+   * nicrealtek (for flash ROMs on Realtek and SMC 1211 network cards)
+   * nicnatsemi (for flash ROMs on National Semiconductor DP838* network cards)
+   * nicintel (for parallel flash ROMs on Intel 10/100Mbit network cards)
+   * gfxnvidia (for flash ROMs on NVIDIA graphics cards)
+   * drkaiser (for flash ROMs on Dr. Kaiser PC-Waechter PCI cards)
+   * satasii (for flash ROMs on Silicon Image SATA/IDE controllers)
+   * satamv (for flash ROMs on Marvell SATA controllers)
+   * atahpt (for flash ROMs on Highpoint ATA/RAID controllers)
+   * atavia (for flash ROMs on VIA VT6421A SATA controllers)
+   * atapromise (for flash ROMs on Promise PDC2026x ATA/RAID controllers)
+   * it8212 (for flash ROMs on ITE IT8212F ATA/RAID controller)
+   * ft2232_spi (for SPI flash ROMs attached to an FT2232/FT4232H/FT232H family
+     based USB SPI programmer), including the DLP Design DLP-USB1232H,
+     FTDI FT2232H Mini-Module, FTDI FT4232H Mini-Module, openbiosprog-spi,
+     Amontec JTAGkey/JTAGkey-tiny/JTAGkey-2, Dangerous Prototypes Bus Blaster,
+     Olimex ARM-USB-TINY/-H, Olimex ARM-USB-OCD/-H, TIAO/DIYGADGET USB
+     Multi-Protocol Adapter (TUMPA), TUMPA Lite, GOEPEL PicoTAP,
+     Google Servo v1/v2, and FIC OpenMoko Neo1973 Debug board.
+   * serprog (for flash ROMs attached to a programmer speaking serprog),
+     including AVR flasher by Urja Rannikko, AVR flasher by eightdot,
+     Arduino Mega flasher by fritz, InSystemFlasher by Juhana Helovuo,
+     and atmegaXXu2-flasher by Stefan Tauner.
+   * buspirate_spi (for SPI flash ROMs attached to a Bus Pirate)
+   * dediprog (for SPI flash ROMs attached to a Dediprog SF100)
+   * rayer_spi (for SPI flash ROMs attached to a RayeR parport based programmer)
+   * pony_spi (for SPI flash ROMs attached to a SI-Prog serial port
+     bitbanging adapter)
+   * nicintel_spi (for SPI flash ROMs on Intel Gigabit network cards)
+   * ogp_spi (for SPI flash ROMs on Open Graphics Project graphics card)
+   * linux_spi (for SPI flash ROMs accessible via /dev/spidevX.Y on Linux)
+   * usbblaster_spi (for SPI flash ROMs attached to an Altera USB-Blaster)
+   * nicintel_eeprom (for SPI EEPROMs on Intel Gigabit network cards)
+   * mstarddc_spi (for SPI flash ROMs accessible through DDC in MSTAR-equipped
+     displays)
+   * pickit2_spi (for SPI flash ROMs accessible via Microchip PICkit2)
+   * ch341a_spi (for SPI flash ROMs attached to WCH CH341A)
+Homepage: http://www.flashrom.org
+
+Package: gsettings-desktop-schemas
+Priority: optional
+Section: gnome
+Installed-Size: 5689
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 48.0-1+rpt1
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: gnome-panel (<< 3.49), gnome-shell (<< 44), libmutter-11-0, metacity (<< 1:3.49), ukwm (<< 1.2.1)
+Filename: pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_48.0-1+rpt1_all.deb
+Size: 1681046
+MD5sum: 6721347872bf8645ffa5987b02f5c16d
+SHA1: 2130a942c4ce7541badc7a723cdfeeffe7972e83
+SHA256: b873326119e18ae3e942146a38c138b494b392fbba83bcd8bc9effc26656a61d
+SHA512: fe11f14a9a2922849d963ac07f9e560a6b43a17b50a5cc3c059ccec4ed5c2cebe3c54012713f4921a1e078cbb3eaa39d8ec6de8150076f34d3321e8e07d8de75
+Description: GSettings desktop-wide schemas
+ gsettings-desktop-schemas contains a collection of GSettings schemas for
+ settings shared by various components of a desktop.
+Homepage: https://www.gnome.org/
+Multi-Arch: foreign
+
+Package: initramfs-tools
+Priority: optional
+Section: utils
+Installed-Size: 53
+Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+Architecture: all
+Version: 0.148.4+rpt2
+Provides: linux-initramfs-tool
+Depends: initramfs-tools-core (= 0.148.4+rpt2), linux-base
+Suggests: bash-completion
+Conflicts: linux-initramfs-tool
+Filename: pool/main/i/initramfs-tools/initramfs-tools_0.148.4+rpt2_all.deb
+Size: 18832
+MD5sum: b221d62d09f3a97b32f96f4ba7c7e0f0
+SHA1: 1082aab33b25b1130cfd8ed9ccbb4e24f98cca3a
+SHA256: 9ce080ea9ae3eee48725d7bdb7d099ed1582c2d778e11c7d54fc652b6e5d680b
+SHA512: 0e3d8fefe4da259816bc2b9bf54d8e323ca2d87c53f0bc81632292077473b37a458c71411b8ffff11fa06cf36a1d497d2816b2c8fd3ffa3eadecc42ecb5c3e9f
+Description: generic modular initramfs generator (automation)
+ This package builds a bootable initramfs for Linux kernel packages.  The
+ initramfs is loaded along with the kernel and is responsible for
+ mounting the root filesystem and starting the main init system.
+Multi-Arch: foreign
+
+Package: initramfs-tools-bin
+Priority: optional
+Section: utils
+Installed-Size: 89
+Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+Architecture: arm64
+Source: initramfs-tools
+Version: 0.148.4+rpt2
+Replaces: initramfs-tools-core (<< 0.148~)
+Depends: libc6 (>= 2.34)
+Breaks: initramfs-tools-core (<< 0.148~)
+Filename: pool/main/i/initramfs-tools/initramfs-tools-bin_0.148.4+rpt2_arm64.deb
+Size: 19330
+MD5sum: 052c688fcd39f8f1fcac3440ed55bbb8
+SHA1: 0769656d00004ea2808cb24128ebedf2debd1b06
+SHA256: 2d317d1028d87a04bb9bf359a300e631a1222b31cd05cc6f337a5df644817cbd
+SHA512: bb9676e02b65bb2890f0d2d7d510e73aef65be1d0415a53e63955ad492a6205d0c6406bc4831c15661f3bc2c30059a83559616a332b72b150ad16e83f4459ddb
+Description: generic modular initramfs generator (binary tools)
+ This package contains the unmkinitramfs program that can be used to
+ unpack an initramfs image.
+Multi-Arch: foreign
+
+Package: initramfs-tools-core
+Priority: optional
+Section: utils
+Installed-Size: 166
+Maintainer: Debian kernel team <debian-kernel@lists.debian.org>
+Architecture: all
+Source: initramfs-tools
+Version: 0.148.4+rpt2
+Depends: coreutils (>= 8.24), cpio (>= 2.12), dracut-install, initramfs-tools-bin (>= 0.148.4+rpt2), klibc-utils (>= 2.0.4-8~), kmod, logsave | e2fsprogs (<< 1.45.3-1~), udev
+Recommends: zstd, busybox | busybox-static
+Suggests: bash-completion
+Breaks: miniramfs (<< 1.0.3~)
+Filename: pool/main/i/initramfs-tools/initramfs-tools-core_0.148.4+rpt2_all.deb
+Size: 56054
+MD5sum: 9e5df9baac177d36d3694f4eb63c4a5e
+SHA1: 4db806d86123378a0e01340125226f67f873555e
+SHA256: 56c5dad97d96fcd08dcef0a10f33da7901ae84dbfb4194c271c108419c674bfe
+SHA512: 2eeed07a8716a656ca42d45d90ac7d1bf212ff1925bdaa7bd0085c9349d22f3597d29f1383a20dfa8dce5a38e738bca4e52b670c49b7d394f3413021e7380e81
+Description: generic modular initramfs generator (core tools)
+ This package contains the mkinitramfs program that can be used to
+ create a bootable initramfs for a Linux kernel.  The initramfs should
+ be loaded along with the kernel and is then responsible for mounting
+ the root filesystem and starting the main init system.
+Multi-Arch: foreign
+
+Package: kms++-utils
+Priority: optional
+Section: libs
+Installed-Size: 474
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: kms++
+Version: 0~git20250807.1813ada-1
+Depends: libc6 (>= 2.38), libfmt10 (>= 10.1.1+ds1), libgcc-s1 (>= 3.0), libkms++0 (>= 0~git20250807.1813ada), libstdc++6 (>= 13.1)
+Filename: pool/main/k/kms++/kms++-utils_0~git20250807.1813ada-1_arm64.deb
+Size: 132394
+MD5sum: f83059b22ca95da5a5a25fc25355f305
+SHA1: c2b7cb35573b9f34ba5052f3a6a2886fce4879f0
+SHA256: a4c2cfe1d6e9458d43c508344c2516b672033135d373392a646a3084fbcc7f11
+SHA512: 804fef9758f8f13d24b1d8be692ec464bf7aa82b785c71e5e270fec830d9df781d655a99c836fd3c4cabb2392317bfaa8e911b0278f2e5b92bb62c3026a757f5
+Description: C++ library for kernel mode setting - utilities
+ C++11 library, utilities and python bindings for Linux kernel mode setting
+ .
+ This package contains:
+  * kmsblank - blank screen(s)
+  * kmstest - set modes and planes and show test pattern on crtcs/planes,
+    and test page flips
+  * kmsprint - print information about DRM objects
+  * fbtest
+Homepage: https://github.com/tomba/kmsxx
+Multi-Arch: foreign
+
+Package: libaml1
+Priority: optional
+Section: libs
+Installed-Size: 81
+Maintainer: Han Gao <rabenda.cn@gmail.com>
+Architecture: arm64
+Source: aml
+Version: 1.0.0-1+rpt1
+Depends: libc6 (>= 2.34)
+Filename: pool/main/a/aml/libaml1_1.0.0-1+rpt1_arm64.deb
+Size: 14896
+MD5sum: 0cb175ccbe6d7fa5699d024f2dc7d194
+SHA1: 9a8bf24d5f3ba6cb788818ee23a2399f938a58e5
+SHA256: 72dbdf339ded0ede41276216aeb6d27e7acc181867297c1002b8989d34b38089
+SHA512: da8e06151ee80e8cfce1f3a5ecd6f3121675a396ba06d778b17166b0c5a509788cfa7f13abae52c08bc303ee5b6174c5d0b3fb4ade482a058d0de6c042c430ed
+Description: Andri's Main Loop library (shared library)
+ Libaml provides an event loop library that aims at portability,
+ utility and simplicity.
+ .
+ This package provides shared libraries.
+Homepage: https://github.com/any1/aml/
+Multi-Arch: same
+
+Package: libasound2-data
+Priority: optional
+Section: libs
+Installed-Size: 200
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: all
+Source: alsa-lib
+Version: 1.2.14-1+rpt1+deb13u1
+Replaces: libasound2t64 (<< 1.2.14-1+rpt1+deb13u1)
+Recommends: alsa-ucm-conf, alsa-topology-conf
+Suggests: alsa-utils
+Breaks: libasound2t64 (<< 1.2.14-1+rpt1+deb13u1)
+Filename: pool/main/a/alsa-lib/libasound2-data_1.2.14-1+rpt1+deb13u1_all.deb
+Size: 24864
+MD5sum: 5ec5a0e8ac22f8527d1b7335f6f35e44
+SHA1: 194afa2080ffaab62fa5fc1271d4ad0fe49e45ce
+SHA256: 3423e187c13638d35de9f88b4cf4074cb51579d76ba661c6db3e3dac2fcfc14d
+SHA512: 37e0e9567b58ea432dc3517ed2104a86ce00eead94e80833ae9b4bacb11338c794885e3ecf53ad0584d984bd22e100b00cd8ab54f29860348bd3158252ce4bbc
+Description: Configuration files and profiles for ALSA drivers
+ This package contains configuration files for ALSA drivers.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Homepage: https://www.alsa-project.org/
+Multi-Arch: foreign
+
+Package: libasound2t64
+Priority: optional
+Section: libs
+Installed-Size: 1269
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: arm64
+Source: alsa-lib
+Version: 1.2.14-1+rpt1+deb13u1
+Replaces: libasound2
+Provides: libasound2 (= 1.2.14-1+rpt1+deb13u1)
+Depends: libasound2-data (>= 1.2.14-1+rpt1+deb13u1), libc6 (>= 2.38)
+Suggests: libasound2-plugins (>= 1.0.24)
+Breaks: alsa-utils (<< 1.2.1), libasound2 (<< 1.2.14-1+rpt1+deb13u1)
+Filename: pool/main/a/alsa-lib/libasound2t64_1.2.14-1+rpt1+deb13u1_arm64.deb
+Size: 460020
+MD5sum: bd51825b4f69a0409f150b9b89a30959
+SHA1: e31f7e067ae4929c8dfe138f2cf36f35e6cd5832
+SHA256: 33d423f463706b9afdc9acf3b2c7280a43d68d2d7b30245f9ff2e8c5b3eb9fe3
+SHA512: 0d3cf2491f26d4d0d307dd526a5837613a57b3871658f94116cc21db0412756a8e36cbcf9edbf7113a4a3f9f557a1bf783499b9c9fa47ee8133e10143bf0f5b1
+Description: shared library for ALSA applications
+ This package contains the ALSA library and its standard plugins, as well
+ as the required configuration files.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Homepage: https://www.alsa-project.org/
+Multi-Arch: same
+
+Package: libatopology2t64
+Priority: optional
+Section: libs
+Installed-Size: 153
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: arm64
+Source: alsa-lib
+Version: 1.2.14-1+rpt1+deb13u1
+Replaces: libasound2t64 (<< 1.2.1.1), libatopology2
+Provides: libatopology2 (= 1.2.14-1+rpt1+deb13u1)
+Depends: libasound2t64 (>= 1.2.7.1), libc6 (>= 2.38)
+Breaks: libasound2t64 (<< 1.2.1.1), libatopology2 (<< 1.2.14-1+rpt1+deb13u1)
+Filename: pool/main/a/alsa-lib/libatopology2t64_1.2.14-1+rpt1+deb13u1_arm64.deb
+Size: 61052
+MD5sum: 992498ef0f1a25545f732c1782d08b64
+SHA1: 4b1d695b5a9944af911dc346cca949f2a2d92482
+SHA256: 21dc74e9000328f8b863754eecc12da74c4911a5b65c869dc5fe69a5c1120b6c
+SHA512: d90c8bda02f86937b412c1927598d8744adaeb03793a1f448184373070f500c7238bd04a07fed93859bb74020869cb6dcf03a78310a096053b6e95663c77ac20
+Description: shared library for handling ALSA topology definitions
+ This package contains the ALSA topology library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Homepage: https://www.alsa-project.org/
+Multi-Arch: same
+
+Package: libavcodec61
+Priority: optional
+Section: libs
+Installed-Size: 14328
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: ffmpeg
+Version: 8:7.1.5-0+deb13u1+rpt2
+Depends: libaom3 (>= 3.2.0), libavutil59 (= 8:7.1.5-0+deb13u1+rpt2), libc6 (>= 2.35), libcairo2 (>= 1.2.4), libcodec2-1.2 (>= 1.2.0), libdav1d7 (>= 1.1.0), libglib2.0-0t64 (>= 2.12.0), libgsm1 (>= 1.0.18), libjxl0.11 (>= 0.8.0), liblzma5 (>= 5.1.1alpha+20120614), libmp3lame0 (>= 3.100), libopenjp2-7 (>= 2.0.0), libopus0 (>= 1.1), librav1e0.7 (>= 0.5.1), librsvg2-2 (>= 2.52.5), libshine3 (>= 3.1.0), libsnappy1v5 (>= 1.2.2), libspeex1 (>= 1.2~), libsvtav1enc2 (>= 2.2.1), libswresample5 (>= 8:7.1.5), libtheoradec1 (>= 1.0), libtheoraenc1 (>= 1.0), libtwolame0 (>= 0.3.10), libudev1 (>= 183), libva2 (>= 2.9.0), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx9 (>= 1.12.0), libwebp7 (>= 1.5.0), libwebpmux3 (>= 1.5.0), libx264-164 (>= 2:0.164.3108+git31e19f9), libx265-215 (>= 4.1), libxvidcore4 (>= 1.2.2), libzvbi0t64 (>= 0.2.35), zlib1g (>= 1:1.2.0)
+Suggests: libcuda1, libnvcuvid1, libnvidia-encode1
+Filename: pool/main/f/ffmpeg/libavcodec61_7.1.5-0+deb13u1+rpt2_arm64.deb
+Size: 7237132
+MD5sum: 0be97d6040c0e76e814fba4103a9338f
+SHA1: c2128bd16b93a4a72c528ebe2564d13fba7c37b5
+SHA256: 5136b722de2d49b3c7a05e9ad54fb30f22891b2ae41ff9f6548590ca5cd2c42b
+SHA512: 2b8b8a15c0f693f04c781c70ea4c609f914aaf8eb6d71dd5c8fc0c0a723de1a0064372a19420fe95bf8b66607a511b022ad5a7e65a46d40877972fe88050d099
+Description: FFmpeg library with de/encoders for audio/video codecs - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic encoding/decoding framework and
+ contains multiple decoders and encoders for audio, video and subtitle streams,
+ and several bitstream filters.
+ .
+ The shared architecture provides various services ranging from bit stream I/O
+ to DSP optimizations, and makes it suitable for implementing robust and fast
+ codecs as well as for experimentation.
+ .
+ This package contains the runtime files.
+Homepage: https://ffmpeg.org/
+Multi-Arch: same
+
+Package: libavfilter10
+Priority: optional
+Section: libs
+Installed-Size: 12856
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: ffmpeg
+Version: 8:7.1.5-0+deb13u1+rpt2
+Depends: libass9 (>= 1:0.15.0), libavcodec61 (= 8:7.1.5-0+deb13u1+rpt2), libavformat61 (>= 8:7.1.5), libavutil59 (= 8:7.1.5-0+deb13u1+rpt2), libbs2b0 (>= 3.1.0+dfsg), libc6 (>= 2.38), libflite1 (>= 1.4-release-9~), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libharfbuzz0b (>= 0.9.9), liblilv-0-0 (>= 0.14.2~dfsg0), libmysofa1 (>= 0.7~), libplacebo349 (>= 7.349.0), libpocketsphinx3 (>= 0.8+5prealpha+1), libpostproc58 (>= 8:7.1.5), librubberband2 (>= 3.3.0+dfsg), libsphinxbase3t64 (>= 0.8+5prealpha), libstdc++6 (>= 13.1), libswresample5 (>= 8:7.1.5), libswscale8 (>= 8:7.1.5), libva2 (>= 1.7.3), libvidstab1.1, libzimg2 (>= 0.3.1), libzmq5 (>= 3.2.3+dfsg), ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 1.0) | libopencl-1.2-1, zlib1g (>= 1:1.1.4)
+Filename: pool/main/f/ffmpeg/libavfilter10_7.1.5-0+deb13u1+rpt2_arm64.deb
+Size: 5306608
+MD5sum: d7429dbf0ff8b1c0ed8e2ec8a6ea3dbb
+SHA1: 732b85255bc31868d10a0fa096d52a0324dadbe7
+SHA256: c6f9896650bfcd46e097f03603cdba4fd656bee91d6a6bde5467bbbfdaa81a06
+SHA512: be740000fd0f50c5f47f398e47dc2139bc519119de733506802112c42c38f1fc360d5c1321e1a2bb2e62defb29a70cfd2b19d0a115ca33d8b8c91c918a1c369d
+Description: FFmpeg library containing media filters - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic audio/video filtering framework containing
+ several filters, sources and sinks.
+ .
+ This package contains the runtime files.
+Homepage: https://ffmpeg.org/
+Multi-Arch: same
+
+Package: libavformat61
+Priority: optional
+Section: libs
+Installed-Size: 3120
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: ffmpeg
+Version: 8:7.1.5-0+deb13u1+rpt2
+Depends: libavcodec61 (= 8:7.1.5-0+deb13u1+rpt2), libavutil59 (= 8:7.1.5-0+deb13u1+rpt2), libbluray2 (>= 1:0.2.2), libbz2-1.0, libc6 (>= 2.38), libchromaprint1 (>= 1.3.2), libdvdnav4 (>= 6.1.0), libdvdread8t64 (>= 6.1.0), libgme0 (>= 0.5.5), libgnutls30t64 (>= 3.8.1), libopenmpt0t64 (>= 0.3.0), librabbitmq4 (>= 0.6.0), librist4 (>= 0.2.6+dfsg), libsrt1.5-gnutls (>= 1.5.4), libssh-4 (>= 0.8.0), libxml2 (>= 2.7.4), libzmq5 (>= 4.0.1+dfsg), zlib1g (>= 1:1.2.0.2)
+Filename: pool/main/f/ffmpeg/libavformat61_7.1.5-0+deb13u1+rpt2_arm64.deb
+Size: 1474532
+MD5sum: 3998f6f55ee3a889a00e985832d70df3
+SHA1: 32131388f6bddaf49df25231e8cf18daedf9fb7e
+SHA256: 45a68cb60a35c9d8edbe3468bd87d39976ec89e6e75671b344d98b932ff2069f
+SHA512: 0ce2b0d4df3f8168d29e9a5c3fdbc7884f64e0bdb53469e95ceca1a0d238cae1d192e7730cd644892e375dea2cd7d340f67bdebe98bab97df5f8b267b0d7e1de
+Description: FFmpeg library with (de)muxers for multimedia containers - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides a generic framework for multiplexing and demultiplexing
+ (muxing and demuxing) audio, video and subtitle streams. It encompasses
+ multiple muxers and demuxers for multimedia container formats. It also
+ supports several input and output protocols to access a media resource.
+ .
+ This package contains the runtime files.
+Homepage: https://ffmpeg.org/
+Multi-Arch: same
+
+Package: libavutil59
+Priority: optional
+Section: libs
+Installed-Size: 1092
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: ffmpeg
+Version: 8:7.1.5-0+deb13u1+rpt2
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.66), libva-drm2 (>= 1.3), libva-x11-2 (>= 1.3), libva2 (>= 2.21.0), libvdpau1 (>= 0.2), libx11-6, ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 1.0) | libopencl-1.2-1
+Filename: pool/main/f/ffmpeg/libavutil59_7.1.5-0+deb13u1+rpt2_arm64.deb
+Size: 505396
+MD5sum: 25f4023a7d59cc7603217826047e1142
+SHA1: f419956f5f912d1f68835506e4fdb3b9d781ebe6
+SHA256: 6ea0066f5d55cd5cbe9b69c6dc60665f20ffff332020b8b6c5cb14b1ffd21a2e
+SHA512: 79222a91bae7aefe5bd5eb0366663a952b0969ba60b4e9512b613fc8430cf389b3d9cd49f5e8ccfaf7579f0b4db2f7baae12bf1e1f0c33b6036d1764c476b085
+Description: FFmpeg library with functions for simplifying programming - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library is a utility library to aid portable multimedia programming.
+ It contains safe portable string functions, random number generators, data
+ structures, additional mathematics functions, cryptography and multimedia
+ related functionality (like enumerations for pixel and sample formats).
+ It is not a library for code needed by both libavcodec and libavformat.
+ The goal for this library is to be modular, small, efficient and useful.
+ .
+ This package contains the runtime files.
+Homepage: https://ffmpeg.org/
+Multi-Arch: same
+
+Package: libbluetooth3
+Priority: optional
+Section: libs
+Installed-Size: 337
+Maintainer: Debian Bluetooth Maintainers <team+pkg-bluetooth@tracker.debian.org>
+Architecture: arm64
+Source: bluez
+Version: 5.82-1.1+rpt2
+Depends: libc6 (>= 2.38)
+Filename: pool/main/b/bluez/libbluetooth3_5.82-1.1+rpt2_arm64.deb
+Size: 122750
+MD5sum: 56a600aa9080bcbc1f3e98fbd2d244c9
+SHA1: 366e084b7a4aea2bc801a29d65cb606f78667d8b
+SHA256: 0b59cef42710b79b08c5d7c99c42cd21674e9732422e1e23a68c1d4ac029e2b6
+SHA512: 97b910601decd1e1ee000573cd046a0ce8b927ee1f0776956f0547720c98209f456cfd1cea712b059d1df1ad9967659112c1d4263ef02b2956fdf01d38e7a7f0
+Description: Library to use the BlueZ Linux Bluetooth stack
+ BlueZ is the official Linux Bluetooth protocol stack. It is an Open Source
+ project distributed under GNU General Public License (GPL).
+Homepage: http://www.bluez.org
+Multi-Arch: same
+
+Package: libc-bin
+Essential: yes
+Priority: required
+Section: libs
+Installed-Size: 2249
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: arm64
+Source: glibc
+Version: 2.41-12+rpt1+deb13u4
+Depends: libc6 (>> 2.41), libc6 (<< 2.42)
+Recommends: manpages
+Breaks: dh-lua (<< 27+nmu1~)
+Filename: pool/main/g/glibc/libc-bin_2.41-12+rpt1+deb13u4_arm64.deb
+Size: 766294
+MD5sum: e3a9a09e80c25ef6d8ddd36e1ec14ed9
+SHA1: 7484e7261457d20267f6cbe0acd91ab2d295f573
+SHA256: 5e45c85b46ac90e548cfe1eea4827b234279c67ca2e9d877ca6de3d48d5c47ac
+SHA512: b63de0618048be13ed046e31cc6f942e685d1c015cac7794fe113e28ff9dce2446931fc8afeea382e00277d438b81def8a419ae5dbefa070b872bb3fbef73734
+Description: GNU C Library: Binaries
+ This package contains utility programs related to the GNU C Library.
+ .
+  * getconf: query system configuration variables
+  * getent: get entries from administrative databases
+  * iconv, iconvconfig: convert between character encodings
+  * ldd, ldconfig: print/configure shared library dependencies
+  * locale, localedef: show/generate locale definitions
+  * tzselect, zdump, zic: select/dump/compile time zones
+Homepage: https://www.gnu.org/software/libc/libc.html
+Multi-Arch: foreign
+
+Package: libc6
+Priority: optional
+Section: libs
+Installed-Size: 23769
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: arm64
+Source: glibc
+Version: 2.41-12+rpt1+deb13u4
+Depends: libgcc-s1
+Recommends: libidn2-0 (>= 2.0.5~)
+Suggests: glibc-doc, debconf | debconf-2.0, libc-l10n, locales, libnss-nis, libnss-nisplus
+Breaks: base-files (<< 13.3~), chrony (<< 4.2-3~), dhcpcd (<< 1:10.1.0-7~), fakechroot (<< 2.19-3.5), firefox (<< 91~), firefox-esr (<< 91~), gnumach-image-1.8-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-486-dbg (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486 (<< 2:1.8+git20210923~), gnumach-image-1.8-xen-486-dbg (<< 2:1.8+git20210923~), hurd (<< 1:0.9.git20220301-2), libamdhip64-5 (<< 5.7.1-5+b1), libhiprtc-builtins5 (<< 5.7.1-5+b1), librccl1 (<< 5.4.3-3+b1), libswupdate0.1 (<< 2024.12.1+dfsg-1+b3), locales (<< 2.41), locales-all (<< 2.41), lua-swupdate (<< 2024.12.1+dfsg-1+b3), nscd (<< 2.41), pd-scaf (<< 1:0.14.1+darcs20180201-6+b4), postgresql-15-pllua (<< 1:2.0.12-4), postgresql-17-pllua (<< 1:2.0.12-3+b2), python3-iptables (<< 1.0.0-2), python3-mrgingham (<< 1.25-1), python3-onnxruntime (<< 1.20.1+dfsg-2~), sysvinit (<< 3.09-2~), sysvinit-core (<< 3.09-2~), tinydns (<< 1:1.05-14), uwsgi-plugin-pypy3 (<< 0.0.2+b1), valgrind (<< 1:3.19.0-1~)
+Filename: pool/main/g/glibc/libc6_2.41-12+rpt1+deb13u4_arm64.deb
+Size: 5178372
+MD5sum: 5fb2701849f96bcaf1380d86073b07e0
+SHA1: 2b0601e920d84be22b4452557b81d599dbe2ce4c
+SHA256: 5c5376fdd2d6a4c9927eb0d6fcfea232f64b8ab44103e65bb61f621e99d792e1
+SHA512: 7f169a2f5f12aef1d39736ef54486592907ff4f34607d6e8a04b58824fcd345b878403d7d9452be0e7ac251a10837c91d1a12ad503f75ff73ec924698bc64981
+Description: GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+Homepage: https://www.gnu.org/software/libc/libc.html
+Multi-Arch: same
+
+Package: libcairo-gobject2
+Priority: optional
+Section: libs
+Installed-Size: 220
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: arm64
+Source: cairo
+Version: 1.18.4-1+rpt1
+Depends: libcairo2 (= 1.18.4-1+rpt1), libglib2.0-0t64 (>= 2.68.0)
+Filename: pool/main/c/cairo/libcairo-gobject2_1.18.4-1+rpt1_arm64.deb
+Size: 133674
+MD5sum: 1d682e35b2fdf3e6d90d06c7a170c262
+SHA1: 38b6d47030ee6c0c5fc7d0d8ae7ca56ed0e4d4af
+SHA256: 602016d81e69e8410cb0bbb18f98e73132c9544d4c94ffa5eb7bfcee168193bc
+SHA512: 73d32afaa7ec491fe680a89efba5304346b41cb5258c74d4e5db61a9222eeb3abe88a2061bccca2ef2ab31bf67c860b8b6a1efdaf7172ff6e9523b469832ffba
+Description: Cairo 2D vector graphics library (GObject library)
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the GObject library, providing wrapper GObject types
+ for all cairo types.
+Homepage: https://cairographics.org/
+Multi-Arch: same
+
+Package: libcairo2
+Priority: optional
+Section: libs
+Installed-Size: 1346
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: arm64
+Source: cairo
+Version: 1.18.4-1+rpt1
+Depends: libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.11.1), libpixman-1-0 (>= 0.40.0), libpng16-16t64 (>= 1.6.46), libx11-6, libxcb-render0, libxcb-shm0, libxcb1 (>= 1.6), libxext6, libxrender1, zlib1g (>= 1:1.1.4)
+Filename: pool/main/c/cairo/libcairo2_1.18.4-1+rpt1_arm64.deb
+Size: 630800
+MD5sum: a7aaca864a1d0cf492daec2d929c2aa1
+SHA1: 94b6b6f0348c8c1ebcad1d4deb86ae028b4d8351
+SHA256: f55eb759103f3cb6c1011733da0e71af9821843dfa308a29931a3b7de3694d82
+SHA512: fbe0b16c4f3f2b85130503f1f99dd27227df80e5205f588d62df2b5ab258da9b7338edd1a89b4a46f077df18dd3e9f168ee7e3f16aaac12054d40cf43b90b009
+Description: Cairo 2D vector graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends. Paths consist
+ of line segments and cubic splines and can be rendered at any width
+ with various join and cap styles. All colors may be specified with
+ optional translucence (opacity/alpha) and combined using the
+ extended Porter/Duff compositing algebra as found in the X Render
+ Extension.
+ .
+ Cairo exports a stateful rendering API similar in spirit to the path
+ construction, text, and painting operators of PostScript, (with the
+ significant addition of translucence in the imaging model). When
+ complete, the API is intended to support the complete imaging model of
+ PDF 1.4.
+ .
+ This package contains the shared libraries.
+Homepage: https://cairographics.org/
+Multi-Arch: same
+
+Package: libcups2t64
+Priority: optional
+Section: libs
+Installed-Size: 764
+Maintainer: Debian Printing Team <debian-printing@lists.debian.org>
+Architecture: arm64
+Source: cups
+Version: 2.4.10-3+rpt2+deb13u2
+Replaces: libcups2
+Provides: libcups2 (= 2.4.10-3+rpt2+deb13u2)
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libgnutls30t64 (>= 3.8.1), libgssapi-krb5-2 (>= 1.17), zlib1g (>= 1:1.2.0)
+Suggests: cups-common
+Breaks: libcups2 (<< 2.4.10-3+rpt2+deb13u2)
+Filename: pool/main/c/cups/libcups2t64_2.4.10-3+rpt2+deb13u2_arm64.deb
+Size: 303554
+MD5sum: 5994a487983809af3d1a92be5bf3dba3
+SHA1: 12cb3e2b12ac2a495d6cc4f9b5ee01357ac02233
+SHA256: 9002e0864a7f78d38859c9d7ee9c5136f6822caf44fc09e0e5d3cbe84a4ed6c2
+SHA512: 5e7b9132108258cc3f5bfa6d1a8ce7be0188a8f412d972fd4c60a0e782c92fb8a5bca01cd18b38f0feeeb2d55ebbbe38b3930b3ec7763b6221014e5f3f05005a
+Description: Common UNIX Printing System(tm) - Core library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the base shared libraries for CUPS.
+Homepage: https://github.com/OpenPrinting/cups/
+Multi-Arch: same
+
+Package: libdrm-amdgpu1
+Priority: optional
+Section: libs
+Installed-Size: 93
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: libdrm
+Version: 2.4.134-3~bpo13+1+rpt1
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.108)
+Filename: pool/main/libd/libdrm/libdrm-amdgpu1_2.4.134-3~bpo13+1+rpt1_arm64.deb
+Size: 28320
+MD5sum: 4b1b3b8217725f094be6c9601cb3a2de
+SHA1: 0ea052fca9d7e62d4e14433a496bcffdfe206583
+SHA256: fc1193658b5457568f0310b73ef9490460219eac5e917e25a373ea486bea4c9c
+SHA512: 52249411da96191ebb9d880cedb9c4ca4aae0829ae4f0a09536de19ee6a10e66e752f3ef31fd8ae83270bc0c2ddd02ac4899e111fd5f8f9af5d82b4ca3143c42
+Description: Userspace interface to amdgpu-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+Homepage: https://gitlab.freedesktop.org/mesa/libdrm/
+Multi-Arch: same
+
+Package: libdrm-common
+Priority: optional
+Section: libs
+Installed-Size: 43
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Source: libdrm
+Version: 2.4.134-3~bpo13+1+rpt1
+Filename: pool/main/libd/libdrm/libdrm-common_2.4.134-3~bpo13+1+rpt1_all.deb
+Size: 11014
+MD5sum: 1924f21163dacebcd1ca892ab289f5a8
+SHA1: 3fa0a3ee808a5e66b869489b4d1d181a3bd4aa8c
+SHA256: 8ff784daec4efb70c269cace24fba1751d0a99ad5cce0ba504f14b28ff1fc04a
+SHA512: 4e33a84330df52cba2c4a62b41e62db1a1ed9cce1ccb52f45e6713cdeb8f54de2dabaae79ae97d40f551cd8550d298b2b1fda0ff510bb22d2bf4abba2e51a404
+Description: Userspace interface to kernel DRM services -- common files
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+ .
+ This package provides common files for libdrm.
+Homepage: https://gitlab.freedesktop.org/mesa/libdrm/
+Multi-Arch: foreign
+
+Package: libdrm2
+Priority: optional
+Section: libs
+Installed-Size: 160
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: libdrm
+Version: 2.4.134-3~bpo13+1+rpt1
+Depends: libdrm-common (>= 2.4.134-3~bpo13+1+rpt1), libc6 (>= 2.38)
+Filename: pool/main/libd/libdrm/libdrm2_2.4.134-3~bpo13+1+rpt1_arm64.deb
+Size: 48370
+MD5sum: f8cebe046619940c0d13271b33e6c475
+SHA1: 9374e24a0590262ecfa354cf250e6b91da51c68b
+SHA256: 6da374f816e1674069d734364eefa2eec435518a76fd2e3989ab6d58c390d0d6
+SHA512: 1dde87040120f5fe2551e95faf49f0c14b06151c651ffcc362eea1edd6ef99a8f4666c5cbf67a167b3162a2a4c4517c6b34d6cfbd98ae682a9eb8c5f782cb1d5
+Description: Userspace interface to kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+ .
+ This package provides the runtime environment for libdrm.
+Homepage: https://gitlab.freedesktop.org/mesa/libdrm/
+Multi-Arch: same
+
+Package: libdtovl0
+Priority: optional
+Section: utils
+Installed-Size: 88
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: raspi-utils
+Version: 20260626-1
+Replaces: libraspberrypi-dev, libraspberrypi-doc, libraspberrypi0
+Depends: libc6 (>= 2.17), libfdt1 (>= 1.7.2)
+Breaks: libraspberrypi-dev, libraspberrypi-doc, libraspberrypi0
+Filename: pool/main/r/raspi-utils/libdtovl0_20260626-1_arm64.deb
+Size: 29976
+MD5sum: 542500be78ffc21593be0121f75532ab
+SHA1: 533e76c0900b76ec046f95c70d880804dd4dbe22
+SHA256: 4b81f914be83ca68cba2da4d8d4d70bdfe3ee9b3006b7e049e86c46d29968225
+SHA512: 76a4212233bc1c9d965616a442f3481af8aac1981779f02cd2399c81568cf9c01ed5425f3e0ce6eb64eff800d50967247e397bfe68c16632c4139c92e8e4ce8a
+Description: Library for manipulating Device Tree overlays
+ A development library providing an API for manipulating
+ device tree overlays
+ .
+ This library powers the dtmerge and dtoverlay utilities, providing
+ functions for loading, merging, and applying device tree overlays,
+ resolving fixups, handling parameters, and managing the device tree
+ blob structure.
+ .
+ This package contains the shared library.
+Homepage: https://github.com/raspberrypi/utils
+Multi-Arch: same
+
+Package: libegl-mesa0
+Priority: optional
+Section: libs
+Installed-Size: 440
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: mesa
+Version: 26.2.2-1~bpo13+0~rpt1
+Provides: libegl-vendor
+Depends: libgbm1 (= 26.2.2-1~bpo13+0~rpt1), mesa-libgallium (= 26.2.2-1~bpo13+0~rpt1), libc6 (>= 2.38), libdrm2 (>= 2.4.134-3~), libexpat1 (>= 2.0.1), libwayland-client0 (>= 1.24.0), libwayland-server0 (>= 1.15.0), libx11-6, libx11-xcb1, libxcb-dri3-0 (>= 1.13), libxcb-present0, libxcb-randr0 (>= 1.3), libxcb-shm0, libxcb-xfixes0, libxcb1 (>= 1.6)
+Filename: pool/main/m/mesa/libegl-mesa0_26.2.2-1~bpo13+0~rpt1_arm64.deb
+Size: 164716
+MD5sum: ed3b756151c1b475cb390938236a5533
+SHA1: 4f08a722cc7e374f5776b0bb372cd7f86c27a938
+SHA256: d53b4297db3a794034d387293b7d234be728640042d18e8be4ce736f6470ab21
+SHA512: 5627aa80bf56b1e311787009866fe468d700f070979f2f108638148c2465ea2484b6ff261f6f4c29b071c7db933ffd1e373be8a042d83ad118885e48b35d0046
+Description: free implementation of the EGL API -- Mesa vendor library
+ This package contains the EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the Mesa vendor library for EGL.
+Homepage: https://mesa3d.org/
+Multi-Arch: same
+
+Package: libgbm1
+Priority: optional
+Section: libs
+Installed-Size: 251
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: mesa
+Version: 26.2.2-1~bpo13+0~rpt1
+Depends: mesa-libgallium (= 26.2.2-1~bpo13+0~rpt1), libc6 (>= 2.38), libdrm2 (>= 2.4.134-3~), libexpat1 (>= 2.0.1), libwayland-server0 (>= 1.15.0)
+Filename: pool/main/m/mesa/libgbm1_26.2.2-1~bpo13+0~rpt1_arm64.deb
+Size: 65196
+MD5sum: bd110be104e60bd31a1fd75b9ca2d296
+SHA1: 909239fe6969ed3ec3c0ae18a3d103e832641fc0
+SHA256: c8cd3a21f350bfe4b3ac7a1754c01a4a993537d2af9fcb6df414cfa6959d63f2
+SHA512: 617814634cb343863a961abb88882baba336eb9b0ffe6ebb7583b979f19d58a76b894bcba63a1b8e0fe3f996ae96fe7f27b037e4e6192d1716d851f0f090952d
+Description: generic buffer management API -- runtime
+ This package contains the GBM buffer management library.  It provides a
+ mechanism for allocating buffers for graphics rendering tied to Mesa.
+ .
+ GBM is intended to be used as a native platform for EGL on drm or openwfd.
+Homepage: https://mesa3d.org/
+Multi-Arch: same
+
+Package: libgl1-mesa-dri
+Priority: optional
+Section: libs
+Installed-Size: 277
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: mesa
+Version: 26.2.2-1~bpo13+0~rpt1
+Depends: libgbm1 (= 26.2.2-1~bpo13+0~rpt1), libvulkan1, libc6 (>= 2.34)
+Filename: pool/main/m/mesa/libgl1-mesa-dri_26.2.2-1~bpo13+0~rpt1_arm64.deb
+Size: 53198
+MD5sum: 31e60a7d33987a333fd55d511766827b
+SHA1: 757f8eafc5f8198185638c74237cdec519654b35
+SHA256: 6d88cce6edb8b2266f366140f73a5fee8c31b014b47135d8504eb6709356feb1
+SHA512: 913bc777a878b56d50af23c71c8afb534e4e4c0f934dc9a726e785e1624644c3e966430403090622fbdec2c5d1dc2ed88fb69a4dc34e97c5643234533b742dfd
+Description: free implementation of the OpenGL API -- DRI modules
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package does not include the OpenGL library itself, only the DRI
+ modules for accelerating direct rendering.
+ .
+ For a complete description of Mesa, please look at the
+ libglx-mesa0 package.
+Homepage: https://mesa3d.org/
+Multi-Arch: same
+
+Package: libglx-mesa0
+Priority: optional
+Section: libs
+Installed-Size: 437
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: mesa
+Version: 26.2.2-1~bpo13+0~rpt1
+Provides: libglx-vendor
+Depends: libgl1-mesa-dri, mesa-libgallium (= 26.2.2-1~bpo13+0~rpt1), libc6 (>= 2.38), libdrm2 (>= 2.4.134-3~), libexpat1 (>= 2.0.1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb-dri3-0, libxcb-glx0 (>= 1.8), libxcb-present0, libxcb-shm0, libxcb-xfixes0, libxcb1, libxext6, libxxf86vm1
+Breaks: glx-diversions (<< 0.8.4~), libopengl-perl (<< 0.6704+dfsg-2)
+Filename: pool/main/m/mesa/libglx-mesa0_26.2.2-1~bpo13+0~rpt1_arm64.deb
+Size: 151696
+MD5sum: bea7098d573d28ea6c5fa397c5db0725
+SHA1: ea8b3451d9be516b1709516f09f65998c571a8d9
+SHA256: 4a658281fb3c8126fbde7947b3311bd6cf1c44834f2ef170af7194757ceba44a
+SHA512: a8b576a5fd6df5f6f6226de9e62dd02ca20be84db9b6f3ac888a089eeb7f6d734f7e2b203def9122f0edf919db610738d157eb0f909b024a5ddd0bbd1cb285d5
+Description: free implementation of the OpenGL API -- GLX vendor library
+ Mesa is a 3-D graphics library with an API which is very similar to
+ that of OpenGL.  To the extent that Mesa utilizes the OpenGL command
+ syntax or state machine, it is being used with authorization from
+ Silicon Graphics, Inc.  However, the authors make no claim that Mesa
+ is in any way a compatible replacement for OpenGL or associated with
+ Silicon Graphics, Inc.
+ .
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package does not include the modules themselves: these can be found
+ in the libgl1-mesa-dri package.
+Homepage: https://mesa3d.org/
+Multi-Arch: same
+
+Package: libgpiolib0
+Priority: optional
+Section: utils
+Installed-Size: 151
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: raspi-utils
+Version: 20260626-1
+Depends: libc6 (>= 2.17)
+Filename: pool/main/r/raspi-utils/libgpiolib0_20260626-1_arm64.deb
+Size: 40984
+MD5sum: 9c48843f21e9cdfa1dc4fc5682197dbb
+SHA1: ca1aceadb514aa11d465949c9ad0e79d7d7b2aed
+SHA256: 594956f65e16d1fcbfd7b76046e11800ff12c0784936ed6fc3b792e707cee8f9
+SHA512: e5da5d915f0a908d0ac7e8be62c71439c5fb0b418c9f650629194ff68f08b40e0c98ec5d7ddf27555275f9df5af1fbbe05e8dd62f8a33a021312cccbdc3da6eb
+Description: GPIO library for Raspberry Pi devices
+ A development library providing a user-space API for accessing and controlling
+ GPIO pins on Raspberry Pi hardware.
+ .
+ The library supports runtime detection of GPIO controllers from Device Tree,
+ referring to GPIOs by name or number, and provides both basic pin control
+ and monitoring capabilities.
+ .
+ This package contains the shared library.
+Homepage: https://github.com/raspberrypi/utils
+Multi-Arch: same
+
+Package: libgtk-3-0t64
+Priority: optional
+Section: libs
+Installed-Size: 11248
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: arm64
+Source: gtk+3.0
+Version: 1:3.24.49-3+rpt8
+Replaces: libgtk-3-0 (<< 1:3.24.41-1.1)
+Provides: gtk3-binver-3.0.0, libgtk-3-0 (= 1:3.24.49-3+rpt8)
+Depends: adwaita-icon-theme, hicolor-icon-theme, shared-mime-info, libatk-bridge2.0-0t64 (>= 2.15.1), libatk1.0-0t64 (>= 2.35.1), libc6 (>= 2.38), libcairo-gobject2 (>= 1.14.0), libcairo2 (>= 1.14.0), libcloudproviders0 (>= 0.3.2), libcolord2 (>= 0.1.10), libcups2t64 (>= 1.7.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0t64 (>= 2.78.0), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.45.5), libpangocairo-1.0-0 (>= 1.44.0), libpangoft2-1.0-0 (>= 1.44.0), libwayland-client0 (>= 1.23), libwayland-cursor0 (>= 1.23), libwayland-egl1 (>= 1.23), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.4.6), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1 (>= 2:1.1.4), libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), libgtk-3-common (>= 1:3.24.49-3+rpt8)
+Recommends: libgtk-3-bin, librsvg2-common
+Suggests: gvfs
+Breaks: libgtk-3-0 (<< 1:3.24.41-1.1), libgtk-layer-shell0 (<< 0.9.0)
+Filename: pool/main/g/gtk+3.0/libgtk-3-0t64_3.24.49-3+rpt8_arm64.deb
+Size: 3637504
+MD5sum: dd4eac70ff8512c2005cf9be278b625e
+SHA1: 12d962e55c9df59c12d53a0abfd06201d42071dc
+SHA256: a253b9795e6741c60fab38ce638c87b79a7425fa7fa299bbe1dc86f75fa4bbab
+SHA512: 518f6495da0c92b2cd407fff06eaeed485bf4f0846954d17adea03001227ff590851ad2645a38b1031f7e7d9d58e564254db39a7b0b67393fdcf9a01427edc2f
+Description: GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+Homepage: https://www.gtk.org/
+Multi-Arch: same
+
+Package: libgtk-3-common
+Priority: optional
+Section: misc
+Installed-Size: 30916
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: gtk+3.0
+Version: 1:3.24.49-3+rpt8
+Replaces: libgtk-3-dev (<< 1:3.24.30-3~)
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: libgtk-3-0t64
+Breaks: libgtk-3-dev (<< 1:3.24.30-3~)
+Filename: pool/main/g/gtk+3.0/libgtk-3-common_3.24.49-3+rpt8_all.deb
+Size: 10372580
+MD5sum: a070cb583c76fb22429f87a047cfb1e6
+SHA1: bec6ede26017692ae732a946a9e558f577321730
+SHA256: d8c0f7ce0dc7b67bf1786409bf7b303c23915185a5abce06f9ef6a5f16eb7642
+SHA512: 52b4f4d9c109d20b4ae1c36422cfae3aaf5f1b16a9cd350fc2a8bf7f55126d0d4a0b6bb2d1aa9e805387fb917960427cbb678c6f8fca6bfc36824d19b3ee2dbc
+Description: common files for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+Homepage: https://www.gtk.org/
+Multi-Arch: foreign
+
+Package: libinput-bin
+Priority: optional
+Section: libs
+Installed-Size: 309
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: libinput
+Version: 1.28.1-1+rpt1+deb13u1
+Depends: libc6 (>= 2.38), libevdev2 (>= 1.10.0), libudev1 (>= 183), libwacom9 (>= 2.0.0)
+Filename: pool/main/libi/libinput/libinput-bin_1.28.1-1+rpt1+deb13u1_arm64.deb
+Size: 34338
+MD5sum: 1006bea7604aa40850e152cd53709b3a
+SHA1: 7c93766993f5384c9c100be57abc3f7001e417ff
+SHA256: 273e17281d68a757e60f2635f66fec71d4b11e8bfe547d8156d02cfb3bb3d719
+SHA512: 2fe2c8ef65f94afcc64a7fd05dacbff5ac67eba25149948626d75f4b4ec56d6c1c45eadb4f06295534827bb83c9fce0374e0c6c72b36952bbbb61182a82db8ec
+Description: input device management and event handling library - udev quirks
+ libinput is a library that handles input devices for display servers and
+ other applications that need to directly deal with input devices.
+ .
+ It provides device detection, device handling, input device event
+ processing and abstraction to minimize the amount of custom input
+ code the user of libinput needs to provide the common set of
+ functionality that users expect.
+ .
+ This package includes the udev quirks database and helpers.
+Homepage: https://www.freedesktop.org/wiki/Software/libinput/
+Multi-Arch: foreign
+
+Package: libinput10
+Priority: optional
+Section: libs
+Installed-Size: 427
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: libinput
+Version: 1.28.1-1+rpt1+deb13u1
+Depends: libc6 (>= 2.38), libevdev2 (>= 1.10.0), libmtdev1t64 (>= 1.1.0), libudev1 (>= 183), libwacom9 (>= 2.13.0), libinput-bin (>= 1.28.1-1+rpt1+deb13u1)
+Filename: pool/main/libi/libinput/libinput10_1.28.1-1+rpt1+deb13u1_arm64.deb
+Size: 165504
+MD5sum: a687004aa38551bbd8f8bea945608215
+SHA1: 746f3b197841e9fbdfb5cc6cb6c46cfdbb25a399
+SHA256: 87556cf1d68298120ed5c2414eeb42c5d714db4dfc05efe52b4151747ef4a3e8
+SHA512: 2b1418b6ad9fcab14c3957635c157f9bdef8077d7627fd565ca15d65dbf75df7c651d93d2b32aa4743fb9115de40a29085f5ba052897e17a4db32eb236845ffa
+Description: input device management and event handling library - shared library
+ libinput is a library that handles input devices for display servers and
+ other applications that need to directly deal with input devices.
+ .
+ It provides device detection, device handling, input device event
+ processing and abstraction to minimize the amount of custom input
+ code the user of libinput needs to provide the common set of
+ functionality that users expect.
+ .
+ This package includes the shared library.
+Homepage: https://www.freedesktop.org/wiki/Software/libinput/
+Multi-Arch: same
+
+Package: libkms++0
+Priority: optional
+Section: libs
+Installed-Size: 472
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: kms++
+Version: 0~git20250807.1813ada-1
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.101), libfmt10 (>= 10.1.1+ds1), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: pool/main/k/kms++/libkms++0_0~git20250807.1813ada-1_arm64.deb
+Size: 139046
+MD5sum: e41ef64894c8a2635d488c7421601be0
+SHA1: ecdd242977081c23cc9a2866b1b3229bcd6ded28
+SHA256: 1a22a36750d8133c1f30868c18c22ab3d5ac526f4183bfb050a34ee1c46da8db
+SHA512: 1162b164dad5fe0f6dd9965dc9918c4f4bc73833bc9e5b21bce4f144b2f12104d9580047e6cac7f893172f945a608b469032b8d37d80abfa0a4f8712a6c877c9
+Description: C++ library for kernel mode setting
+ C++11 library, utilities and python bindings for Linux kernel mode setting
+Homepage: https://github.com/tomba/kmsxx
+Multi-Arch: same
+
+Package: libneatvnc1
+Priority: optional
+Section: libs
+Installed-Size: 282
+Maintainer: Han Gao <rabenda.cn@gmail.com>
+Architecture: arm64
+Source: neatvnc
+Version: 1.0.1-1+rpt1
+Depends: libaml1 (>= 1.0.0), libavcodec61 (>= 8:7.1.5), libavfilter10 (>= 8:7.1.5), libavutil59 (>= 8:7.1.5), libc6 (>= 2.38), libdrm2 (>= 2.4.75), libgbm1 (>= 21.1.0), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30t64 (>= 3.8.1), libhogweed6t64, libnettle8t64, libpixman-1-0 (>= 0.30.0), libturbojpeg0 (>= 1.2.90), zlib1g (>= 1:1.2.0)
+Filename: pool/main/n/neatvnc/libneatvnc1_1.0.1-1+rpt1_arm64.deb
+Size: 97362
+MD5sum: ab18c2c5c7f53d12917babf3213f71d9
+SHA1: fa21bfb9628b06e0852946baf8eb174a8fdae395
+SHA256: 8ebc8b494384a2036f8543ec6a7eae90ea8c30838eb29c59cde529979d80641a
+SHA512: b57027f26e5e575957cb1dcd1b990edcc12514fd6af2fab683d2a0306fe86c6f7e88f72a5d6fd33acf0f88a67470e2eb44bce6a0858ad2f783d42920e1afc4b8
+Description: Fast and neat VNC server library (shared library)
+ Neatvnc is a liberally licensed VNC server library that's intended
+ to be fast and neat. It comes with the goal of speed, clean interface
+ and interoperability with the Freedesktop.org ecosystem.
+ .
+ This package provides shared libraries.
+Homepage: https://github.com/any1/neatvnc/
+Multi-Arch: same
+
+Package: libnetplan1
+Priority: optional
+Section: libs
+Installed-Size: 417
+Maintainer: Debian Networking Team <team+networking@tracker.debian.org>
+Architecture: arm64
+Source: netplan.io
+Version: 1.1.2-7+rpt1
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.76.0), libuuid1 (>= 2.16), libyaml-0-2
+Filename: pool/main/n/netplan.io/libnetplan1_1.1.2-7+rpt1_arm64.deb
+Size: 115104
+MD5sum: c6a69948d0dccbf7fbc072fa1a4a2a83
+SHA1: 836adb4aeaf8a971c59691453f6812f8db1e248f
+SHA256: 9057b387f4b9b89d93265f1e8e89acf585705bd711a7d686b4fe06d000c44624
+SHA512: bb94561f9b1aa07e7a4f2e98d4cf63c7ee02b6c54cda2351892c0c642bdb04f47d232d38547db30ee67499295499d9cd89e868db6ad1e55bba1b8585b8086bae
+Description: Declarative network configuration runtime library
+ Netplan reads YAML network configuration files which are written
+ by administrators, installers, cloud image instantiations, or other OS
+ deployments. During early boot it then generates backend specific
+ configuration files in /run to hand off control of devices to a particular
+ networking daemon.
+ .
+ Currently supported backends are networkd and NetworkManager.
+ .
+ This package contains the necessary runtime library files.
+Homepage: https://netplan.io/
+Multi-Arch: same
+
+Package: libnm0
+Priority: optional
+Section: libs
+Installed-Size: 1789
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: arm64
+Source: network-manager
+Version: 1.52.1-1+rpt4
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.44.0), libgnutls30t64 (>= 3.7.2), libudev1 (>= 183)
+Filename: pool/main/n/network-manager/libnm0_1.52.1-1+rpt4_arm64.deb
+Size: 425516
+MD5sum: fb4df11a9b631fd2731940ff5da6d5be
+SHA1: 44b1976b36bd3b9e6db4ec057f08c4b9c5734007
+SHA256: 3e007f8a6e5093b1777a077dfd4124851bd326be1303fc29526e624a8c1aacf3
+SHA512: 496edc181875319e4d18ff535be98b488befec2b2f7e91238274c01ef1132647e54e65c22427014236e629bc458554a8ea6c75e3b27cc519d24d0af44bc9407e
+Description: GObject-based client library for NetworkManager
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, Wi-Fi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package contains a convenience library to ease the access to
+ NetworkManager.
+Homepage: https://networkmanager.dev/
+Multi-Arch: same
+
+Package: libpipewire-0.3-0t64
+Priority: optional
+Section: libs
+Installed-Size: 1017
+Maintainer: David Turner <david.turner@raspberrypi.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: pipewire
+Version: 1.4.2-1+rpt3
+Replaces: libpipewire-0.3-0
+Provides: libpipewire-0.3-0 (= 1.4.2-1+rpt3)
+Depends: libspa-0.2-modules (= 1.4.2-1+rpt3), libc6 (>= 2.38)
+Recommends: libpipewire-0.3-common
+Suggests: pipewire (= 1.4.2-1+rpt3)
+Breaks: libpipewire-0.3-0 (<< 1.4.2-1+rpt3)
+Filename: pool/main/p/pipewire/libpipewire-0.3-0t64_1.4.2-1+rpt3_arm64.deb
+Size: 409162
+MD5sum: 673d1a66cbe3895f37bd64b5ca0442f5
+SHA1: c04574c12349b10708e8c207aaf9b5cae8372e67
+SHA256: f3d28a400581cdb628e34d4d3e1ab461e5fdd6308bc2d69dc2510fa3abdb9b2d
+SHA512: 192e42746fa81eec858bc69e4b20c762d9b91e49f3bcc4cfe5773a52a4eb93544595d34934ab78b0cfb017859a188aea476888984a9cc9be922cd76cf0d2d5ca
+Description: libraries for the PipeWire multimedia server
+ PipeWire is a server and user space API to deal with multimedia
+ pipelines. This includes:
+ .
+  - Making available sources of audio and video (such as from a capture devices
+    or application provided streams) and multiplexing this with clients.
+  - Accessing sources of audio and video for consumption.
+  - Generating graphs for audio and video processing.
+Homepage: https://pipewire.org/
+Multi-Arch: same
+Original-Uploaders: Jeremy Bicha <jbicha@debian.org>, Dylan Aïssi <daissi@debian.org>
+
+Package: libpixman-1-0
+Priority: optional
+Section: libs
+Installed-Size: 670
+Maintainer: David Turner <david.turner@raspberrypi.com>
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: pixman
+Version: 0.46.4-1+rpt1
+Depends: libc6 (>= 2.29)
+Filename: pool/main/p/pixman/libpixman-1-0_0.46.4-1+rpt1_arm64.deb
+Size: 240036
+MD5sum: 2eeb7767a76de0cc6b166d184bd27bab
+SHA1: f477fe58020eea509d1b0d5add91288389353bd0
+SHA256: 94742a65e7ada9fbc6f52a1f859d1d83ef6e5d9dccb9cf6b34fb40c5fc7677e5
+SHA512: eef4010756813f8195ccd919f1d11e370693d77de6952eba923c1b99324f369f1079cdecbf055c4bc176a3396b16bd70017d92018244e08472e5f3c85d477166
+Description: pixel-manipulation library for X and cairo
+ A library for manipulating pixel regions -- a set of Y-X banded
+ rectangles, image compositing using the Porter/Duff model
+ and implicit mask generation for geometric primitives including
+ trapezoids, triangles, and rectangles.
+Homepage: http://pixman.org/
+Multi-Arch: same
+Original-Uploaders: Andreas Boll <aboll@debian.org>
+
+Package: libpostproc58
+Priority: optional
+Section: libs
+Installed-Size: 173
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: ffmpeg
+Version: 8:7.1.5-0+deb13u1+rpt2
+Depends: libavutil59 (>= 8:7.1.5), libc6 (>= 2.17)
+Filename: pool/main/f/ffmpeg/libpostproc58_7.1.5-0+deb13u1+rpt2_arm64.deb
+Size: 94318
+MD5sum: 515f70cb665fb28fde768cdd412a6d39
+SHA1: 0c1a6a05b2bde265197ee5d4cef8fbf1958ea428
+SHA256: 56937017cd8aed80cae27e9f7b0dd134a582834f7a43bd5d9e55999c3271f49e
+SHA512: 1d180399c9fbd24ffba7b939627974bb3c0db8e22777c7a2a835c5a994eeb29de076b6bd9d15fd9d052d6269ab7a6f2dc3a4fa4c482d5df068049399c7e8b687
+Description: FFmpeg library for post processing - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library provides video post processing.
+ .
+ This package contains the runtime files.
+Homepage: https://ffmpeg.org/
+Multi-Arch: same
+
+Package: libpulse0
+Priority: optional
+Section: libs
+Installed-Size: 1108
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Architecture: arm64
+Source: pulseaudio
+Version: 17.0+dfsg1-2+rpt1
+Depends: libasyncns0 (>= 0.3), libc6 (>= 2.38), libdbus-1-3 (>= 1.10), libsndfile1 (>= 1.0.20), libsystemd0, libx11-6, libx11-xcb1, libxcb1
+Suggests: pulseaudio
+Filename: pool/main/p/pulseaudio/libpulse0_17.0+dfsg1-2+rpt1_arm64.deb
+Size: 336102
+MD5sum: 83adbe6a65b2e94eae1edd321832cdcf
+SHA1: a1280d33748c64493b3e31b93901cb1eb775023e
+SHA256: 15c4231e1484b2a1c7bb791415fd6cddc554a23348f20aa4c46aa9b2dd011a36
+SHA512: f269ed512128f62ec0b1587cbb4218ecb6d777bd858d1ceb869ff8aaedda68f4e105a92ff228be833935ce94cbcc0d7be32f4f0b7fef33ac599390d67c30d60c
+Description: PulseAudio client libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+Homepage: http://pulseaudio.org
+Multi-Arch: same
+
+Package: libspa-0.2-modules
+Priority: optional
+Section: libs
+Installed-Size: 4671
+Maintainer: David Turner <david.turner@raspberrypi.com>
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: pipewire
+Version: 1.4.2-1+rpt3
+Replaces: pipewire (<< 0.3.5)
+Depends: libasound2t64 (>= 1.2.10), libc6 (>= 2.38), libdbus-1-3 (>= 1.10), libebur128-1 (>= 1.2.0), libfftw3-single3 (>= 3.3.10), libgcc-s1 (>= 3.0), liblilv-0-0 (>= 0.14.2~dfsg0), libmysofa1 (>= 0.6~), libsndfile1 (>= 1.0.20), libstdc++6 (>= 12), libsystemd0, libudev1 (>= 183), libwebrtc-audio-processing-1-3 (>= 1.3)
+Breaks: pipewire (<< 0.3.5)
+Filename: pool/main/p/pipewire/libspa-0.2-modules_1.4.2-1+rpt3_arm64.deb
+Size: 1998248
+MD5sum: fde0c1a63445f52fc46d1c0554395b88
+SHA1: da3b3d4fbf3c7112b542eb134b7a99b45580d9f7
+SHA256: 20f77bfb5f72e45d485713a0dae65d4fbe05d9adf0bb59ecf193569c3c156438
+SHA512: f2a821f89e40719fd580ec2f0aa249c2eeeb855fcabad4aa065ac6cf302eaaf596a63ce4095846588aa0d5fc53a37ee919671dcb492dff152a7328fa0fc4abb0
+Description: libraries for the PipeWire multimedia server Simple Plugin API - modules
+ PipeWire is a server and user space API to deal with multimedia
+ pipelines. This includes:
+ .
+  - Making available sources of audio and video (such as from a capture devices
+    or application provided streams) and multiplexing this with clients.
+  - Accessing sources of audio and video for consumption.
+  - Generating graphs for audio and video processing.
+ .
+ This package contains core support modules used in the Simple Plugin API,
+ together with test and utility modules that do not introduce additional
+ dependencies. It should not normally be depended on directly: PipeWire
+ clients should depend on the pipewire package instead.
+Homepage: https://pipewire.org/
+Multi-Arch: same
+Original-Uploaders: Jeremy Bicha <jbicha@debian.org>, Dylan Aïssi <daissi@debian.org>
+
+Package: libssl3t64
+Priority: optional
+Section: libs
+Installed-Size: 8019
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Architecture: arm64
+Source: openssl
+Version: 3.5.7-1~deb13u2+rpt1
+Replaces: libssl3
+Provides: libssl3 (= 3.5.7-1~deb13u2+rpt1)
+Depends: libc6 (>= 2.38), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), openssl-provider-legacy
+Breaks: freeradius (<< 3.2.7+dfsg-1+deb13u1), libssl3 (<< 3.5.7-1~deb13u2+rpt1), openssh-client (<< 1:9.4p1), openssh-server (<< 1:9.4p1), python3-m2crypto (<< 0.38.0-4)
+Filename: pool/main/o/openssl/libssl3t64_3.5.7-1~deb13u2+rpt1_arm64.deb
+Size: 3441468
+MD5sum: 5338cb4a26e9ee14a27f6abb723b2718
+SHA1: b4008c56a71837dbe7587c79b39fdd5b05453bff
+SHA256: d7ba06e170eea763e4e9d8002bee8cc2bba74d3b757515e31b8fbd43bec31b61
+SHA512: 4e90d9ef16ea164df28c7ebccbf6988b7decc7511e11eebc34d62c8104ea0e8f36c863276986506b894e7ad28cf85d8c2d79458f3958f124dfab09b3e2ec5fc9
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+Homepage: https://openssl-library.org
+Multi-Arch: same
+
+Package: libswresample5
+Priority: optional
+Section: libs
+Installed-Size: 237
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: ffmpeg
+Version: 8:7.1.5-0+deb13u1+rpt2
+Depends: libavutil59 (>= 8:7.1.5), libc6 (>= 2.29), libsoxr0 (>= 0.1.0)
+Filename: pool/main/f/ffmpeg/libswresample5_7.1.5-0+deb13u1+rpt2_arm64.deb
+Size: 112706
+MD5sum: 486985a38e21435b02f5006ec553a4f9
+SHA1: 5848cfb338c82b7286e8bbfe377811c9c5000914
+SHA256: d969ce1ec48ca42b1fdd4d4e7c9d7c4d652be30158bcefe5b9b0914b568ac630
+SHA512: c61b1252e6ff61916df66b5b6e7eba00a894fe8398a74511893ca8784cee1e09bf44d756b5a5ab58f69c7e09c224384fa480e4e0df63dc8d098c5a93b5f3528e
+Description: FFmpeg library for audio resampling, rematrixing etc. - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library performs highly optimized audio resampling, rematrixing
+ and sample format conversion operations.
+ Specifically, this library performs the following conversions:
+  * Resampling is the process of changing the audio rate, for example from a
+    high sample rate of 44100Hz to 8000Hz. Audio conversion from high to low
+    sample rate is a lossy process. Several resampling options and algorithms
+    are available.
+  * Rematrixing is the process of changing the channel layout, for example from
+    stereo to mono. When the input channels cannot be mapped to the output
+    streams, the process is lossy, since it involves different gain factors
+    and mixing. Various other audio conversions (e.g. stretching and padding)
+    are enabled through dedicated options.
+  * Format conversion is the process of converting the type of samples, for
+    example from 16-bit signed samples to unsigned 8-bit or float samples.
+    It also handles packing conversion, when passing from packed layout (all
+    samples belonging to distinct channels interleaved in the same buffer), to
+    planar layout (all samples belonging to the same channel stored in a
+    dedicated buffer or "plane").
+ .
+ This package contains the runtime files.
+Homepage: https://ffmpeg.org/
+Multi-Arch: same
+
+Package: libswscale8
+Priority: optional
+Section: libs
+Installed-Size: 621
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: ffmpeg
+Version: 8:7.1.5-0+deb13u1+rpt2
+Depends: libavutil59 (= 8:7.1.5-0+deb13u1+rpt2), libc6 (>= 2.34)
+Filename: pool/main/f/ffmpeg/libswscale8_7.1.5-0+deb13u1+rpt2_arm64.deb
+Size: 269446
+MD5sum: b84a3ac5a8341070bf0a8b7f008ed46c
+SHA1: 5e969da5b3c96a4caabde968defbec9d05880269
+SHA256: 22dd42112e0c163be7a75621e540ba6f33b81045c2f5bcbc9b420ea3cf751afb
+SHA512: 96a78de12a2180669674195f15c9fd8a9498baeb95c92bf6b53ed6633b6d296cd2bd8d59078d9943f83acf49c2890ec82cf671bec4068b867df88bdae551d1c1
+Description: FFmpeg library for image scaling and various conversions - runtime files
+ FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
+ mux, demux, stream, filter and play pretty much anything that humans and
+ machines have created. It supports the most obscure ancient formats up to the
+ cutting edge.
+ .
+ This library performs highly optimized image scaling and colorspace and pixel
+ format conversion operations.
+ Specifically, this library performs the following conversions:
+  * Rescaling is the process of changing the video size. Several rescaling
+    options and algorithms are available. This is usually a lossy process.
+  * Pixel format conversion is the process of converting the image format and
+    colorspace of the image, for example from planar YUV420P to RGB24 packed.
+    It also handles packing conversion, that is converts from packed layout
+    (all pixels belonging to distinct planes interleaved in the same buffer),
+    to planar layout (all samples belonging to the same plane stored in a
+    dedicated buffer or "plane"). This is usually a lossy process in case the
+    source and destination colorspaces differ.
+ .
+ This package contains the runtime files.
+Homepage: https://ffmpeg.org/
+Multi-Arch: same
+
+Package: libwayland-client0
+Priority: optional
+Section: libs
+Installed-Size: 150
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: wayland
+Version: 1.24.0-2~bpo13+1~rpt1
+Depends: libc6 (>= 2.38), libffi8 (>= 3.4)
+Filename: pool/main/w/wayland/libwayland-client0_1.24.0-2~bpo13+1~rpt1_arm64.deb
+Size: 33542
+MD5sum: 37d924f8758ef556418d5182a49407a6
+SHA1: 78adb18fe503368728b920a7be37a69a4948a64c
+SHA256: 6ba34ab53ddf12d8d959512a7bbf467cd8f5a2eb6d2ff02f665769c18a2dcc68
+SHA512: 36fea442a226d57f5e1ba50a7bf3562733ec36a8b3925d72a000f5d68847a051a931f9dc286bdbcaf76ae6d252eab71ce84fbff340536062dfa4bf3c56c26d77
+Description: wayland compositor infrastructure - client library
+ Wayland is a protocol for a compositor to talk to its clients as well
+ as a C library implementation of that protocol. The compositor can be
+ a standalone display server running on Linux kernel modesetting and
+ evdev input devices, an X application, or a wayland client
+ itself. The clients can be traditional applications, X servers
+ (rootless or fullscreen) or other display servers.
+ .
+ This package ships the library that implements the client side of
+ the Wayland protocol.
+Homepage: https://wayland.freedesktop.org/
+Multi-Arch: same
+
+Package: libwayland-cursor0
+Priority: optional
+Section: libs
+Installed-Size: 95
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: wayland
+Version: 1.24.0-2~bpo13+1~rpt1
+Depends: libc6 (>= 2.28), libwayland-client0 (>= 1.20.0)
+Filename: pool/main/w/wayland/libwayland-cursor0_1.24.0-2~bpo13+1~rpt1_arm64.deb
+Size: 13870
+MD5sum: 925258153fcf34d8fb61332ff0483d0a
+SHA1: 4466643b23739a19f5b9d6c67ce2eb633253c162
+SHA256: 67b14a3e2eaca4214ffa02a57f644ecd1169fb493c5b8edd65f54b8d8bda49d9
+SHA512: e332aacc4d9cc73375e029f29da35dcc24a6673fd1453a655ce011e6922ed488f2834bd17f6442716e5dbdebe2d153e17f0796b8f8685dd20afc3eb96f67e6c2
+Description: wayland compositor infrastructure - cursor library
+ Wayland is a protocol for a compositor to talk to its clients as well
+ as a C library implementation of that protocol. The compositor can be
+ a standalone display server running on Linux kernel modesetting and
+ evdev input devices, an X application, or a wayland client
+ itself. The clients can be traditional applications, X servers
+ (rootless or fullscreen) or other display servers.
+ .
+ This package ships a helper library to manage cursors.
+Homepage: https://wayland.freedesktop.org/
+Multi-Arch: same
+
+Package: libwayland-egl1
+Priority: optional
+Section: libs
+Installed-Size: 82
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: wayland
+Version: 1.24.0-2~bpo13+1~rpt1
+Depends: libc6 (>= 2.17)
+Filename: pool/main/w/wayland/libwayland-egl1_1.24.0-2~bpo13+1~rpt1_arm64.deb
+Size: 6772
+MD5sum: 7aeb5b943f296082b7df9dec9208bf93
+SHA1: 04e709b271656a198f6eb1b1b1cd3828d221224f
+SHA256: ab55b3d447d751a60e137947c23b62b5395b2a0cf90ed3da43b7c78cc457c1eb
+SHA512: b17a6dd8f6cc95976bb36a4fe59b29928a56509b292b0ce383c9c43ebd8d2f97e3674a4d09396a6393b0b640dc371a8b117eeb0e3b818a89f9c75a69fbb892c0
+Description: wayland compositor infrastructure - EGL library
+ Wayland is a protocol for a compositor to talk to its clients as well
+ as a C library implementation of that protocol. The compositor can be
+ a standalone display server running on Linux kernel modesetting and
+ evdev input devices, an X application, or a wayland client
+ itself. The clients can be traditional applications, X servers
+ (rootless or fullscreen) or other display servers.
+ .
+ This package ships the library that implements the Wayland EGL platform
+ of the Wayland protocol.
+Homepage: https://wayland.freedesktop.org/
+Multi-Arch: same
+
+Package: libwayland-server0
+Priority: optional
+Section: libs
+Installed-Size: 153
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: wayland
+Version: 1.24.0-2~bpo13+1~rpt1
+Depends: libc6 (>= 2.38), libffi8 (>= 3.4)
+Filename: pool/main/w/wayland/libwayland-server0_1.24.0-2~bpo13+1~rpt1_arm64.deb
+Size: 42408
+MD5sum: 6fbc236dc6343cedf16e5e1ade6e5822
+SHA1: 1817d1b36898560672a92373f9ac7ca3bdd59d8a
+SHA256: 05858aaf843a23ce4de7f2f5884a0689967ab2af23ed1ae9086a08977155845f
+SHA512: 83e4b23d7265e97c811ed52ab69fc0d05b57025cea43098e7394b55a1906a3259f94e82908cbb6df1bc9d2ef0bf89bb86d4401c0a0f2a550251abebd2379bb0e
+Description: wayland compositor infrastructure - server library
+ Wayland is a protocol for a compositor to talk to its clients as well
+ as a C library implementation of that protocol. The compositor can be
+ a standalone display server running on Linux kernel modesetting and
+ evdev input devices, an X application, or a wayland client
+ itself. The clients can be traditional applications, X servers
+ (rootless or fullscreen) or other display servers.
+ .
+ This package ships the library that implements the server side of
+ the Wayland protocol.
+Homepage: https://wayland.freedesktop.org/
+Multi-Arch: same
+
+Package: libxkbcommon0
+Priority: optional
+Section: libs
+Installed-Size: 409
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: libxkbcommon
+Version: 1.13.1-1~bpo13+1+rpt1
+Depends: xkb-data, libc6 (>= 2.38)
+Filename: pool/main/libx/libxkbcommon/libxkbcommon0_1.13.1-1~bpo13+1+rpt1_arm64.deb
+Size: 174534
+MD5sum: 22b0d00015b3e924c8757e8995726174
+SHA1: c6e4517bef3a60fa3ddb310d85877f4b3d0c6a3b
+SHA256: b9839efc034dfca74ec9457fec194f1b97e2a4e422c9fb892eb36781b572410e
+SHA512: b66b45ab59d0913483096ab7e0a6a9ec8b138261c4630e29743c966c9072ed670107f5e753ded564b28af80b5095c875cffac6cd76d93dbe940ef79f57505041
+Description: library interface to the XKB compiler - shared library
+ This package provides a library to handle keyboard descriptions, including
+ loading them from disk, parsing them and handling their state. It's mainly
+ meant for client toolkits, window systems, and other system applications;
+ currently that includes Wayland, kmscon, GTK+, Clutter, and more.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ https://github.com/xkbcommon/libxkbcommon.git
+Homepage: https://www.xkbcommon.org/
+Multi-Arch: same
+
+Package: linux-base-6.18.50+rpt-rpi-2712
+Priority: optional
+Section: kernel
+Installed-Size: 973
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Filename: pool/main/l/linux/linux-base-6.18.50+rpt-rpi-2712_6.18.50-1+rpt1_arm64.deb
+Size: 965408
+MD5sum: 925896208910614a80c51b2d4157139e
+SHA1: 0fa4d11250ef134732f49e1e7d16abb96bb3e2bb
+SHA256: 5c46e42abccc850c209b67fb89faf0483da6db36337578e3b9c60823acce7e10
+SHA512: e4002f065469ff21cff50001006285f5f06a7315b544fdf6544dd63ba527417ef5b9a2ec6345da9e23ddc8ad02dcac390bcc9c69031e865fc628d47de22dda57
+Description: Linux for Raspberry Pi 2712 (dummy package)
+ This package contains files common to all Linux kernel packages.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: linux-base-6.18.50+rpt-rpi-v8
+Priority: optional
+Section: kernel
+Installed-Size: 973
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Filename: pool/main/l/linux/linux-base-6.18.50+rpt-rpi-v8_6.18.50-1+rpt1_arm64.deb
+Size: 965416
+MD5sum: f124f9109b58625f3d04997c6000baa4
+SHA1: d072b1a343cdc5fe9b1329ee70b355d297235cde
+SHA256: f6b0870fde0785a392ca131f758280b07670837b31acf475e49f27c896583f85
+SHA512: 260e75cd565dcc9966de2ced1f25df64aec01e51504b8561108447e9a9300a965a093414b3eb4bd2fcf6fdfd8509d35b1eaaa9c5b87b14d2aa11e2b6dd5c641a
+Description: Linux for Raspberry Pi v8 (dummy package)
+ This package contains files common to all Linux kernel packages.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: linux-base-rpi-2712
+Priority: optional
+Section: kernel
+Installed-Size: 9
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Depends: linux-base-6.18.50+rpt-rpi-2712 (= 1:6.18.50-1+rpt1)
+Filename: pool/main/l/linux/linux-base-rpi-2712_6.18.50-1+rpt1_arm64.deb
+Size: 1188
+MD5sum: 41e56d8f7382dd2c0929658b28474d98
+SHA1: b31f3bc406cd490192e9193f5e80461adee85ed2
+SHA256: 5c7567f4308827ffdeac8b930b8efae0eed808d508030d25a4c34e5de69e44dd
+SHA512: 9c0f60053612238d2370b13f7b6f4cc59857c93e5e022ab9b72f0cee485cf498b13d1ef1e757106a6095639152d6d519060ee372569ef5be0e5092330519936d
+Description: Linux for Raspberry Pi 2712 (dummy package)
+ This package contains files common to all Linux kernel packages.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: linux-base-rpi-v8
+Priority: optional
+Section: kernel
+Installed-Size: 9
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Depends: linux-base-6.18.50+rpt-rpi-v8 (= 1:6.18.50-1+rpt1)
+Filename: pool/main/l/linux/linux-base-rpi-v8_6.18.50-1+rpt1_arm64.deb
+Size: 1184
+MD5sum: 32fea4d33dfdf259e048eb17c88b7655
+SHA1: 854cf43a9cd88454987da63aa442657b0fddd8d6
+SHA256: bca7b21fdee0425cb4f71882e42cb7c754a406e47b40141750e3ef9f2a3ffae6
+SHA512: fdbf638a41779b6d8aea4c7608a37ab468f316f3e1920d6dff8fe8ac55eb8efab0f6d38dfbc83d7461a853a5b2b83c43ef9935ba9d8fcc0ac6ee58b9822d71ea
+Description: Linux for Raspberry Pi v8 (dummy package)
+ This package contains files common to all Linux kernel packages.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: linux-image-6.18.50+rpt-rpi-2712
+Priority: optional
+Section: kernel
+Installed-Size: 35717
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Depends: initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool, kmod, linux-base-6.18.50+rpt-rpi-2712 (= 1:6.18.50-1+rpt1)
+Pre-Depends: linux-base (>= 4.12~)
+Recommends: apparmor
+Suggests: debian-kernel-handbook, firmware-linux-free, linux-doc-6.18
+Breaks: flash-kernel (<< 3.110~), fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), reform-tools (<< 1.83~), u-boot-efi-dtb (<< 5~), wireless-regdb (<< 2019.06.03-1~)
+Filename: pool/main/l/linux/linux-image-6.18.50+rpt-rpi-2712_6.18.50-1+rpt1_arm64.deb
+Size: 32320868
+MD5sum: 92a866d86fe3c6c815cd63ab4e849f0d
+SHA1: 6066da8a8e1313ee1bb585e359e92d24b539175c
+SHA256: 41a73543781af93f591adddcbf1e2fcc478450784ba2a27be2f07af84ce2bbb6
+SHA512: 67302000d71e9cb9d50f63e45002812f2a24477d5b97042050d9997b32cd6af480eb086eb15e9df4c3158eb86463cea0660a5151bc0850e908c725fdc7fab726
+Description: Linux 6.18.50 for Raspberry Pi 2712, Raspberry Pi
+ The Linux kernel 6.18.50 and modules for use on Raspberry Pi 2712 kernel.
+ .
+ This kernel includes the patches for Raspberry Pi platforms.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: linux-image-6.18.50+rpt-rpi-v8
+Priority: optional
+Section: kernel
+Installed-Size: 35713
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Depends: initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool, kmod, linux-base-6.18.50+rpt-rpi-v8 (= 1:6.18.50-1+rpt1)
+Pre-Depends: linux-base (>= 4.12~)
+Recommends: apparmor
+Suggests: debian-kernel-handbook, firmware-linux-free, linux-doc-6.18
+Breaks: flash-kernel (<< 3.110~), fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), reform-tools (<< 1.83~), u-boot-efi-dtb (<< 5~), wireless-regdb (<< 2019.06.03-1~)
+Filename: pool/main/l/linux/linux-image-6.18.50+rpt-rpi-v8_6.18.50-1+rpt1_arm64.deb
+Size: 32322668
+MD5sum: 1e23fd796904b49eff62d92b7fa05875
+SHA1: dd8d815eb9703200dbfb220498d22d621b6642e4
+SHA256: 8d44827fea22875e0f801252bdbc0f541c03144e970caafa3115bf485ff3c4bd
+SHA512: c7f44165c7566645d1341eef1010b9b0361ce5d04e4fb10a5908412765502c888a0f2063e20498d76e2a8e27c410f7aef3f7ec6c07850fd64063f72a0c193b60
+Description: Linux 6.18.50 for Raspberry Pi v8, Raspberry Pi
+ The Linux kernel 6.18.50 and modules for use on Raspberry Pi v8 kernel.
+ .
+ This kernel includes the patches for Raspberry Pi platforms.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: linux-image-rpi-2712
+Priority: optional
+Section: kernel
+Installed-Size: 13
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Provides: linux-latest-modules-6.18.50+rpt-rpi-2712, wireguard-modules (= 1.0.0)
+Depends: linux-base-rpi-2712 (= 1:6.18.50-1+rpt1), linux-image-6.18.50+rpt-rpi-2712 (= 1:6.18.50-1+rpt1)
+Filename: pool/main/l/linux/linux-image-rpi-2712_6.18.50-1+rpt1_arm64.deb
+Size: 1428
+MD5sum: 431d22abfcbfd92bee33b94a44130755
+SHA1: 6e65c4ef16c1a398d83daf3112c8f0fe3c738c3b
+SHA256: 540ea8075f46596c186f8063e9f2ec571a1c2927f22fa48448f27cc34f9cb342
+SHA512: b86a080361a0361af903bac31786fbc92997762a03cf99498f6bbd98b17783da0468d37ea0b44cddec212075a84cabd610cb373bb05ceb793865ebf6fe549afa
+Description: Linux for Raspberry Pi 2712 (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ Raspberry Pi 2712 kernel.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: linux-image-rpi-v8
+Priority: optional
+Section: kernel
+Installed-Size: 13
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: linux
+Version: 1:6.18.50-1+rpt1
+Provides: linux-latest-modules-6.18.50+rpt-rpi-v8, wireguard-modules (= 1.0.0)
+Depends: linux-base-rpi-v8 (= 1:6.18.50-1+rpt1), linux-image-6.18.50+rpt-rpi-v8 (= 1:6.18.50-1+rpt1)
+Filename: pool/main/l/linux/linux-image-rpi-v8_6.18.50-1+rpt1_arm64.deb
+Size: 1436
+MD5sum: 0ab27039095f897516fb0fa5be15f910
+SHA1: 81913a61985a0f750f311faad6545c172d996b25
+SHA256: 593409b57ea633fc2f40036e34818e389cc2b8d13b930845237f224aba8678e3
+SHA512: 832b7fe57b4118b652d4b4e6f8748dcdcd58c100737ec1cd4ba4afb899d2aa552e124e4c91293f6b91062a68b901bf5d7a068a9c08b8e239dc728e908e5621be
+Description: Linux for Raspberry Pi v8 (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ Raspberry Pi v8 kernel.
+Homepage: https://github.com/raspberrypi/linux/
+
+Package: mesa-libgallium
+Priority: optional
+Section: libs
+Installed-Size: 50583
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: arm64
+Source: mesa
+Version: 26.2.2-1~bpo13+0~rpt1
+Replaces: mesa-va-drivers (<< 25.2.8-3), mesa-vdpau-drivers (<< 25.2.8-3)
+Provides: libglapi-mesa, mesa-va-drivers, mesa-vdpau-drivers, va-driver
+Depends: libc6 (>= 2.38), libdrm-amdgpu1 (>= 2.4.134-3~), libdrm2 (>= 2.4.134-3~), libelf1t64 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.0), libllvm19 (>= 1:19.1.0), libsensors5 (>= 1:3.5.0), libstdc++6 (>= 11), libx11-xcb1, libxcb-dri3-0 (>= 1.13), libxcb-present0, libxcb-randr0 (>= 1.3), libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxshmfence1, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.3.4)
+Breaks: mesa-va-drivers (<< 25.2.8-3), mesa-vdpau-drivers (<< 25.2.8-3)
+Filename: pool/main/m/mesa/mesa-libgallium_26.2.2-1~bpo13+0~rpt1_arm64.deb
+Size: 16668376
+MD5sum: 41d655a2361e855c5de93133c01a71b0
+SHA1: cdaeaeece7ed134f875d73d285f81a4488625912
+SHA256: a493e062b2b3834a2843d5d4ff83c11330e47bff95ea8b980dc953a2ca363089
+SHA512: a0640123b575371bc4b7298f0bb58a48935ffa7d4a2989ed54a67bd17b53a23d73741243dc9a59d21f79ca52dcdf29297a58e7f5c68f4f3ac7c7fd54898e905f
+Description: shared infrastructure for Mesa drivers
+ This package contains libgallium, a private library shared between
+ multiple Mesa drivers. This library is an implementation detail of Mesa
+ and should not be used directly by user code.
+Enhances: libva2
+Homepage: https://mesa3d.org/
+Multi-Arch: same
+
+Package: netplan-generator
+Priority: optional
+Section: net
+Installed-Size: 332
+Maintainer: Debian Networking Team <team+networking@tracker.debian.org>
+Architecture: arm64
+Source: netplan.io
+Version: 1.1.2-7+rpt1
+Replaces: netplan.io (<< 0.106.1-8~)
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.70.0), libnetplan1 (= 1.1.2-7+rpt1), systemd (>= 248~)
+Suggests: network-manager | wpasupplicant, openvswitch-switch, iw
+Breaks: netplan.io (<< 0.106.1-8~)
+Filename: pool/main/n/netplan.io/netplan-generator_1.1.2-7+rpt1_arm64.deb
+Size: 74804
+MD5sum: 3b3379376fdf0bac5e7d1841cc7af7be
+SHA1: cf803fc386e401a9728f48fb168ad38c3476672c
+SHA256: 222edf65ca379a8d6b40f18a81e4df1c5273846d9e56f1d0c9f37390c5128c8c
+SHA512: dc2c97b19f657313098c419322d7eae5c68888618f0917749c3d52152cf4a13b11289f9ee21f195c1b7437736a5e0cc865efdf49272e958e7fec459ebb8a6fdd
+Description: Declarative network configuration for various backends at boot
+ Netplan reads YAML network configuration files which are written
+ by administrators, installers, cloud image instantiations, or other OS
+ deployments. During early boot it then generates backend specific
+ configuration files in /run to hand off control of devices to a particular
+ networking daemon.
+ .
+ Currently supported backends are networkd and NetworkManager.
+ .
+ This package provides a systemd-generator to configure various networking
+ daemons at boot time.
+Homepage: https://netplan.io/
+Multi-Arch: foreign
+
+Package: netplan.io
+Priority: optional
+Section: net
+Installed-Size: 372
+Maintainer: Debian Networking Team <team+networking@tracker.debian.org>
+Architecture: arm64
+Version: 1.1.2-7+rpt1
+Depends: python3:any, libc6 (>= 2.34), libglib2.0-0t64 (>= 2.70.0), libnetplan1 (= 1.1.2-7+rpt1), libsystemd0 (>= 243), ethtool, iproute2, netplan-generator, python3-netplan, python3-yaml, systemd (>= 248~), udev
+Recommends: python3-rich
+Suggests: systemd-resolved
+Filename: pool/main/n/netplan.io/netplan.io_1.1.2-7+rpt1_arm64.deb
+Size: 82080
+MD5sum: 0b60f5a6765109ab40fceff2ea14011c
+SHA1: 71def78c45a5f3eab4d85ad123f28d0c3e7563fc
+SHA256: 1297a39ce7301fadf956c52362e34d8ea3aca1825b4ae4dc41577c270933f6cf
+SHA512: f075ad7ba3ff2be792d34ac77475af059d02fa2700392552599fc6b6fc68db6bfe145d9808e640083e73773633fb49c43b621bb141829421d7dfe05485b23181
+Description: Declarative network configuration for various backends at runtime
+ Netplan reads YAML network configuration files which are written
+ by administrators, installers, cloud image instantiations, or other OS
+ deployments. During early boot it then generates backend specific
+ configuration files in /run to hand off control of devices to a particular
+ networking daemon.
+ .
+ Currently supported backends are networkd and NetworkManager.
+ .
+ This package provides a runtime CLI to control the Netplan backends,
+ e.g. to re-generate configuration or apply changes.
+Homepage: https://netplan.io/
+Multi-Arch: foreign
+
+Package: network-manager
+Priority: optional
+Section: net
+Installed-Size: 8584
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: arm64
+Version: 1.52.1-1+rpt4
+Depends: libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 5), libc6 (>= 2.38), libcurl3t64-gnutls (>= 7.24.0), libglib2.0-0t64 (>= 2.68.0), libgnutls30t64 (>= 3.7.2), libjansson4 (>= 2.14), libmm-glib0 (>= 1.10.0), libndp0 (>= 1.2), libnetplan1 (>= 0.106), libnewt0.52 (>= 0.52.25), libnm0 (= 1.52.1-1+rpt4), libpsl5t64 (>= 0.13.0), libreadline8t64 (>= 6.0), libselinux1 (>= 3.1~), libsystemd0 (>= 209), libteamdctl0 (>= 1.9), libudev1 (>= 183), netplan.io (>= 0.106~), default-dbus-system-bus | dbus-system-bus, adduser
+Recommends: ppp, dnsmasq-base, modemmanager, wireless-regdb, wpasupplicant, libpam-systemd, polkitd, udev, network-manager-l10n
+Suggests: libteam-utils, iptables
+Breaks: ppp (>= 2.5.2-2~), ppp (<< 2.5.2-1+~)
+Filename: pool/main/n/network-manager/network-manager_1.52.1-1+rpt4_arm64.deb
+Size: 2053348
+MD5sum: 2fd2157739ae716913f4c0852d59432b
+SHA1: 23f1dcaee37234da3fea8ae829c1d17bc6aa16e3
+SHA256: 50717dccae05dcc6e091d4f9a57503a969836cbeaa5f87afd54bbbe9beb6e801
+SHA512: 03994c84785b44d04d1d032ff4d122e2e3b54fcf69851db99b2f07d8271b101768d001c20257f304e51414ba81675f5a5b8de4b55fbefcb11ee7245fe8a5d129
+Description: network management framework (daemon and userspace tools)
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, Wi-Fi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package provides the userspace daemons and a command line interface to
+ interact with NetworkManager.
+ .
+ Optional dependencies:
+  * ppp: Required for establishing dial-up connections (e.g. via GSM).
+  * dnsmasq-base/iptables: Required for creating Ad-hoc connections and
+    connection sharing.
+  * libteam-utils: Network Team driver allows multiple network interfaces to be
+    teamed together and act like a single one. This process is called "ethernet
+    bonding", "channel teaming" or "link aggregation".
+Homepage: https://networkmanager.dev/
+
+Package: openssl
+Priority: optional
+Section: utils
+Installed-Size: 2554
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Architecture: arm64
+Version: 3.5.7-1~deb13u2+rpt1
+Depends: libc6 (>= 2.34), libssl3t64 (>= 3.5.0)
+Suggests: ca-certificates
+Filename: pool/main/o/openssl/openssl_3.5.7-1~deb13u2+rpt1_arm64.deb
+Size: 1571172
+MD5sum: 0888a881fb5738da14fd8ffd7daf1544
+SHA1: 5d3b85b4b6c52081126531824fca4e9289c8568a
+SHA256: c5138d2b34836b71224cc14d5374216935b68ac869bf3c3efaa434e59ebe5538
+SHA512: 31a5d3994e3ffa84d7453f9181c74366f287a8f10d9d2b7b7f3aac3a4a9189b22df2c35ff2efb7fa8c0edf404fde5e3f4d70e4810b881296a903aff4b1adb613
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains the general-purpose command line binary /usr/bin/openssl,
+ useful for cryptographic operations such as:
+  * creating RSA, DH, and DSA key parameters;
+  * creating X.509 certificates, CSRs, and CRLs;
+  * calculating message digests;
+  * encrypting and decrypting with ciphers;
+  * testing SSL/TLS clients and servers;
+  * handling S/MIME signed or encrypted mail.
+Homepage: https://openssl-library.org
+Multi-Arch: foreign
+
+Package: openssl-provider-legacy
+Priority: optional
+Section: utils
+Installed-Size: 416
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@alioth-lists.debian.net>
+Architecture: arm64
+Source: openssl
+Version: 3.5.7-1~deb13u2+rpt1
+Replaces: libssl3 (<< 3.3.1-5), libssl3t64 (<< 3.3.1-5)
+Depends: libc6 (>= 2.17), libssl3t64 (>= 3.0.3)
+Breaks: libssl3 (<< 3.3.1-5), libssl3t64 (<< 3.3.1-5)
+Filename: pool/main/o/openssl/openssl-provider-legacy_3.5.7-1~deb13u2+rpt1_arm64.deb
+Size: 324724
+MD5sum: af07a18e30664e92c7a705d4ae364fcd
+SHA1: fcb7ee9c8f85ffef7ad372c70ad3da273650616e
+SHA256: 88494d1c5314559a69f7cd7453228c22de70d1a45c8e56b5fdd56114222e1b6f
+SHA512: 42e64a5ccb374713eab4f026a75da09ff9cf8f87580501efa86534a322f08262332f9ce1e13b1c7a52d6a8e175b78a54d558751396c11f6a0ac349756475b89b
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ This package contains the legacy provider. The OpenSSL legacy provider
+ supplies OpenSSL implementations of algorithms that have been deemed legacy.
+ Such algorithms have commonly fallen out of use, have been deemed insecure by
+ the cryptography community, or something similar.
+ For details see OSSL_PROVIDER-legacy man page.
+Homepage: https://openssl-library.org
+Multi-Arch: foreign
+
+Package: python3-netplan
+Priority: optional
+Section: python
+Installed-Size: 193
+Maintainer: Debian Networking Team <team+networking@tracker.debian.org>
+Architecture: arm64
+Source: netplan.io
+Version: 1.1.2-7+rpt1
+Replaces: netplan.io (<< 0.107-3~)
+Depends: python3 (>= 3~), python3:any, libc6 (>= 2.17), libnetplan1 (= 1.1.2-7+rpt1), python3-cffi-backend
+Breaks: netplan.io (<< 0.107-3~)
+Filename: pool/main/n/netplan.io/python3-netplan_1.1.2-7+rpt1_arm64.deb
+Size: 36372
+MD5sum: 476a4855f0a9d468ecafb55ae6651472
+SHA1: 4c55ea2ad3846af729eba4a49493eddab5cb5e2d
+SHA256: a934df7db5ad14cde1f12dd5401133532d408235fcb262b39364454460d5b7e7
+SHA512: c11600c2eb2e731aa17fd7868f4fc9d144315172032617ce45fefbb5c798ef12a3c6ce22c50184329731bd4f21a476f40ce8c3c95a1c804146c318bca5dda553
+Description: Declarative network configuration Python bindings
+ Netplan reads YAML network configuration files which are written
+ by administrators, installers, cloud image instantiations, or other OS
+ deployments. During early boot it then generates backend specific
+ configuration files in /run to hand off control of devices to a particular
+ networking daemon.
+ .
+ Currently supported backends are networkd and NetworkManager.
+ .
+ This package provides a CFFI based Python bindings to libnetplan.
+Homepage: https://netplan.io/
+Multi-Arch: foreign
+
+Package: raspberrypi-archive-keyring
+Priority: important
+Section: misc
+Installed-Size: 28
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Version: 2025.1+rpt1
+Filename: pool/main/r/raspberrypi-archive-keyring/raspberrypi-archive-keyring_2025.1+rpt1_all.deb
+Size: 7372
+MD5sum: ec2cdc9f39582c3727d0b196f6761dea
+SHA1: 9a2f5e2c68f0e4fa6de6372f427eb2b7edd70f7f
+SHA256: 2e727149d7acb8cc7f604e66d0049161039c8aa1eaf1175e54f9e69d963d60e4
+SHA512: 5bf56937705683bb86cba3ad93a33e8738e08144fc75f6dd55763b58750cf0f714e55295bdb6957e4c169f438020b99f3427fe06eb5f3bb27698c0ed1253d686
+Description: OpenPGP archive certificates of the Debian archive
+ The Debian project digitally signs its Release files. This package
+ contains the archive certificates used for that.
+Multi-Arch: foreign
+
+Package: raspi-config
+Priority: optional
+Section: utils
+Installed-Size: 32
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Version: 20260730
+Depends: raspi-config-core, whiptail, parted, alsa-utils, psmisc, raspi-utils-core, dconf-cli, bsdextrautils
+Recommends: iw
+Filename: pool/main/r/raspi-config/raspi-config_20260730_all.deb
+Size: 12658
+MD5sum: 1546b022561b61cf243f196e6445fc62
+SHA1: c194e9358fbc2409b5c36737fbcfc07b9ddf62df
+SHA256: c5b5499bdfc6b47e6f238b4eeb638a992c5690efcdfd01efa963ff010b6db327
+SHA512: 3223147d22af9342851f5ebe1f5ab8bfdbe6f53e69619ba9a3b7ac72bb15827fbfebe6b07c9c4298b18dbdad8b717c6794abe7a0e1dbda56287f3ccded92e781
+Description: Raspberry Pi configuration tool
+ A simple configuration tool for common Raspberry Pi administrative tasks
+
+Package: raspi-config-core
+Priority: optional
+Section: utils
+Installed-Size: 142
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Source: raspi-config
+Version: 20260730
+Replaces: raspi-config (<< 20251202)
+Breaks: raspi-config (<< 20251202)
+Filename: pool/main/r/raspi-config/raspi-config-core_20260730_all.deb
+Size: 35596
+MD5sum: ad466713ca33c5bd013d742c2bfcbd33
+SHA1: 9035fd4aed7303c635c9da81223030665b12896d
+SHA256: 642a4b61aa852bca5c9be46141d1f9e1782c27fe190508f5340e173235f658fb
+SHA512: 7b996cb5635f332524bd413b5d72f1df5b75b11a46a03cd1fcdb8b67455b3dab8e600583df4bb5d1b26506eaafd6fbf2a10e2fd6e1d89c72bfa2b788c61e3565
+Description: Raspberry Pi configuration tool (script only)
+ A simple configuration tool for common Raspberry Pi administrative tasks
+ .
+ This package contains just the raspi-config script, intended for advanced,
+ non-interactive use. This package does not install any of the depenencies.
+
+Package: raspi-firmware
+Priority: optional
+Section: non-free-firmware/misc
+Installed-Size: 22136
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Version: 1:1.20260915-1
+Replaces: linux-firmware-raspi3 (<< 1.20161123-2), raspi3-firmware (<< 1.20190718-1~)
+Depends: dosfstools, rsync
+Pre-Depends: dpkg (>= 1.17.14)
+Suggests: firmware-brcm80211, firmware-misc-nonfree, bluez-firmware
+Breaks: linux-firmware-raspi3 (<< 1.20161123-2), raspi3-firmware (<< 1.20190718-1~)
+Filename: pool/main/r/raspi-firmware/raspi-firmware_1.20260915-1_all.deb
+Size: 13032414
+MD5sum: b12568ac0ca4e2568f9ba2c6b5bc6c93
+SHA1: 926fa161f3a4404378c49019a68d08cb104c5686
+SHA256: 56b6f8792fb27bcc22f101a5a0d27af637e0d13e85dfc0fde5ff140abc929b0f
+SHA512: 4558b24a88ecbd29b10eca8d18d6852791d19b823f7cc964fd384761c56aab20670ae008595b8d428a8794c2c13efe4dd343adff7866298d265d3ef7106bd8d2
+Description: Raspberry Pi family GPU firmware and bootloaders
+ This package contains all the proprietary files necessary to boot a
+ Raspberry Pi board.
+ .
+ Raspberry Pi is a trademark of Raspberry Pi Ltd.
+Homepage: https://github.com/raspberrypi/firmware
+
+Package: raspi-utils
+Priority: optional
+Section: utils
+Installed-Size: 14
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Version: 20260626-1
+Depends: raspi-utils-core, raspi-utils-otp, raspi-utils-dt, raspi-utils-eeprom, raspinfo (>= 20240402-4)
+Filename: pool/main/r/raspi-utils/raspi-utils_20260626-1_all.deb
+Size: 7794
+MD5sum: 5612ba8d5602d5c747ad27bb49fa0fb0
+SHA1: ddd6a4183a3afc23d514554d29ca49cb5b7acba9
+SHA256: 2bdb73a551a1a3c155303d1b3486ae8ed1858729e4b1b85f791ae987e1d278b6
+SHA512: dff464bf83035d675405bf13b8e71ca9b6a49f186acb061ca18fd900a0d566b6a67f53ebc3579da4bb1bbc4c311bb0fd67ba692bc5bffc857ec86220ec3a63e2
+Description: Collection of scripts and simple applications
+ This is a meta-package that installs all of utilities
+Homepage: https://github.com/raspberrypi/utils
+
+Package: raspi-utils-core
+Priority: optional
+Section: utils
+Installed-Size: 307
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: raspi-utils
+Version: 20260626-1
+Replaces: libraspberrypi-bin, raspi-utils (<< 20240402-4)
+Depends: libc6 (>= 2.38), libgpiolib0 (>= 20250514)
+Breaks: libraspberrypi-bin, raspi-utils (<< 20240402-4)
+Filename: pool/main/r/raspi-utils/raspi-utils-core_20260626-1_arm64.deb
+Size: 41374
+MD5sum: b273bc20c024306186c495b72c5fa0bb
+SHA1: 7c7408f2100740848f0020d86ef224329b317889
+SHA256: 3df579a81d76081e283409840beb9b1df26a9487c50aef95293743a4ba689fb9
+SHA512: 6abf7c9b4da09e7a338d3974b9a6134ead8c6d13097ba953e98caa69b8adef025b765d5083c084f61e645d93808b7a7930929286223119c79f2360784598b266
+Description: Collection of scripts and simple applications
+ vclog - A tool to get VideoCore 'assert' or 'msg' logs with optional -f to wait
+ for new logs to arrive
+ pinctrl - A tool for displaying and modifying the GPIO and pin muxing state of
+   a system, bypassing the kernel.
+ vcgencmd - A tool to get various bits of information from the VideoCore
+ vcmailbox - A tool to send a message to the VideoCore
+Homepage: https://github.com/raspberrypi/utils
+
+Package: raspi-utils-dt
+Priority: optional
+Section: utils
+Installed-Size: 242
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: raspi-utils
+Version: 20260626-1
+Replaces: libraspberrypi-bin, ovmerge (<< 20230123-1), raspi-utils (<< 20240402-4)
+Depends: perl:any, libc6 (>= 2.34), libdtovl0 (>= 20250514), libfdt1 (>= 1.7.2), device-tree-compiler
+Breaks: libraspberrypi-bin, ovmerge (<< 20230123-1), raspi-utils (<< 20240402-4)
+Filename: pool/main/r/raspi-utils/raspi-utils-dt_20260626-1_arm64.deb
+Size: 54914
+MD5sum: 0830b642a9c0905802d17e61ea804d91
+SHA1: 34eba55b1398f6653ba394fdcf0a105b63cc882b
+SHA256: 068adfdf78097ca0429da2adac0f35769e217e8db20045c0090536e690b2d606
+SHA512: c74cf3a20a2d6a1cea5f9405c5f379575578248bf53726f338cada2d2d97e4d1ac0ec822ac738ab88360ece0ce8486845823a02de868ff8a208050974ab8e724
+Description: Device Tree overlay utilities
+ dtmerge - A tool for applying compiled DT overlays (*.dtbo) to base Device Tree
+ files (*.dtb)
+ overlaycheck - A tool for validating the overlay files and README in a kernel
+ source tree
+ ovmerge - A tool for merging DT overlay source files (*-overlay.dts),
+ flattening and sorting .dts files for easy comparison, displaying the include
+ tree, etc
+Homepage: https://github.com/raspberrypi/utils
+
+Package: raspi-utils-eeprom
+Priority: optional
+Section: utils
+Installed-Size: 154
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: arm64
+Source: raspi-utils
+Version: 20260626-1
+Replaces: raspi-utils (<< 20240402-4)
+Depends: libc6 (>= 2.34)
+Breaks: raspi-utils (<< 20240402-4)
+Filename: pool/main/r/raspi-utils/raspi-utils-eeprom_20260626-1_arm64.deb
+Size: 27554
+MD5sum: 1ac8a3c67566606779e167877b37c918
+SHA1: 91e8c4b3cd09efbe3b8c7af561d3ed99a4ca08b5
+SHA256: 276832e9247838114cfb251a71750b4eeb878934a16af60a78db07cc8a483f01
+SHA512: df3c6b9a2f95596fa022ac47d9b730aa596a13f12fb7ffdfdc76cee0072fa3fe5db39f3a95b3ccad5d91c7973b362a8eb339f915f780b36c569d1adc8f11c0b8
+Description: Tools for creating and managing EEPROMs for HAT+ and HAT board
+ Tools for building, flashing and reading Raspberry Pi HAT+  and HAT .eep files
+Homepage: https://github.com/raspberrypi/utils
+
+Package: raspi-utils-otp
+Priority: optional
+Section: utils
+Installed-Size: 21
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Source: raspi-utils
+Version: 20260626-1
+Replaces: raspi-utils (<< 20240402-4)
+Depends: python3:any
+Breaks: raspi-utils (<< 20240402-4)
+Filename: pool/main/r/raspi-utils/raspi-utils-otp_20260626-1_all.deb
+Size: 10310
+MD5sum: 33d6446447d35fb66c8f6b9b8310616d
+SHA1: e6dfd2d2b4682ab4e39eadd534212e6a6a9747a3
+SHA256: a11c106825fbdc5e664ebe30f6fff32c049931e976a8eb58edba8156fb88d0e8
+SHA512: f400bbdc68de1340ca2c619b2033662a1f4cf163e0b095a8df8a66764b6dc412aae49a96afbca8d4b2caf95569450292bfe646ce1e96548892381ddd76e9912e
+Description: Tools for reading and setting Raspberry Pi OTP bits
+ A short script to help with reading and setting the customer OTP bits
+Homepage: https://github.com/raspberrypi/utils
+
+Package: raspinfo
+Priority: optional
+Section: utils
+Installed-Size: 23
+Maintainer: Serge Schneider <serge@raspberrypi.com>
+Architecture: all
+Source: raspi-utils
+Version: 20260626-1
+Replaces: raspi-utils (<< 20240402-4)
+Depends: raspi-utils-core, net-tools, kms++-utils, sudo, usbutils
+Recommends: pastebinit, rpi-eeprom
+Breaks: raspi-utils (<< 20240402-4)
+Filename: pool/main/r/raspi-utils/raspinfo_20260626-1_all.deb
+Size: 10552
+MD5sum: 1ac3dc1144997bd07c56b40c00748028
+SHA1: 0d5598c295fae3a21bf6221d4da1650310fe2e33
+SHA256: 3d926e453d15779abe6df66164d71a205353d700d8a93a0c46dba752a96d2867
+SHA512: 824202c0d71c659d5c1634c36da178aebfae0666c8851b74766a4c50275c2a1743b13d969d7101ad2283f19909f071eeaa09e2d323f09b420cebfd1c8a6d7645
+Description: Prints information about the Raspberry Pi for bug reports
+ A short script to dump information about the Pi. Intended for the
+ submission of bug reports
+Homepage: https://github.com/raspberrypi/utils
+
+Package: rpi-eeprom
+Priority: optional
+Section: misc
+Installed-Size: 26009
+Maintainer: Tim Gover <tim.gover@raspberrypi.com>
+Architecture: all
+Version: 28.32-1
+Replaces: rpi-eeprom-images (<< 7.2)
+Provides: rpi-eeprom-images
+Depends: raspi-utils, python3, binutils, pciutils, python3-pycryptodome
+Recommends: flashrom, rpieepromab (>= 20260304+1)
+Breaks: rpi-eeprom-images (<< 7.2)
+Filename: pool/main/r/rpi-eeprom/rpi-eeprom_28.32-1_all.deb
+Size: 7996552
+MD5sum: 715a4095fb617138d0525311454848a1
+SHA1: 64af03e37b97099282f8f89fae61c8467cfda712
+SHA256: 970ba0b29e44ee2f52bcec0937147a2f6e6eddefc59252e1851334cc922b3ce8
+SHA512: 3838e8ebef50f2a356f7e8d21bf6be34f0d5613afb62dd0bc7b49dcc6ded6ce41945b90d1624e74cef80528243371a4c636ff6fbf5e01d94ad6f47b93c60a161
+Description: Raspberry Pi 4/5 boot EEPROM updater
+ Checks whether the Raspberry Pi bootloader EEPROM is up-to-date and updates
+ the EEPROM.
+Homepage: https://github.com/raspberrypi/rpi-eeprom/
+
+Package: wpasupplicant
+Priority: optional
+Section: net
+Installed-Size: 3914
+Maintainer: Debian wpasupplicant Maintainers <wpa@packages.debian.org>
+Architecture: arm64
+Source: wpa
+Version: 2:2.10-24+rpt2
+Depends: libc6 (>= 2.34), libdbus-1-3 (>= 1.10), libnl-3-200 (>= 3.2.21), libnl-genl-3-200 (>= 3.2.7), libnl-route-3-200 (>= 3.4.0), libpcsclite1 (>= 1.0.0), libreadline8t64 (>= 6.0), libssl3t64 (>= 3.0.0), adduser
+Suggests: wpagui, libengine-pkcs11-openssl
+Breaks: network-manager (<< 1.36.4-2~)
+Filename: pool/main/w/wpa/wpasupplicant_2.10-24+rpt2_arm64.deb
+Size: 1731484
+MD5sum: 4732944a4b5c8f4e5d1060fa0d1d22d2
+SHA1: 0b71a68c564078af4c3cf4ae2ef195195aed4477
+SHA256: f5a86b66e3a3e794014367f02437a2baca8b5eb46b0c052d8ce16983d70e7c1b
+SHA512: b50e52ba703bd3d7912df94d9779ef4dcd67644df51441519a06c86493462193e57ca3e8c08dc5d7aef1966525300670989a1c44f6d980fe0cfd1bdb32c2f903
+Description: client support for WPA and WPA2 (IEEE 802.11i)
+ wpa-supplicant is a userspace daemon handling connection and authentication
+ in wireless and wired networks, primarily secured with the WPA/WPA2/WPA3
+ protocols. This software provides key negotiation with the access point
+ (WPA Authenticator), and controls association with IEEE 802.11i networks.
+Homepage: https://w1.fi/wpa_supplicant/
+Multi-Arch: foreign
+

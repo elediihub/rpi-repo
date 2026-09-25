@@ -1,0 +1,6 @@
+Origin: Eledii
+Label: Raspberry Pi Foundation Mirror
+Archive: trixie-20260925T134605Z
+Suite: trixie-20260925T134605Z
+Architecture: arm64
+Component: main
