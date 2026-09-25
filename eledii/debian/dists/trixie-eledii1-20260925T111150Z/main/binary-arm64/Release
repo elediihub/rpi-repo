@@ -1,0 +1,7 @@
+Origin: Eledii
+Label: Eledii Custom Packages
+Archive: trixie-eledii1-20260925T111150Z
+Suite: trixie-eledii1-20260925T111150Z
+Codename: trixie-eledii1-20260925T111150Z
+Architecture: arm64
+Component: main
